@@ -27,7 +27,7 @@ Parameters used:
 | to_country           | string(2)   | Yes      | Receiver's country (refer to [country code](#country-code))    |
 | weight               | double(8,2) | Yes      | The weight of the parcel.                                      |
 
-Sample Code:
+Request Sample Code:
 ```
 <?php
 
@@ -68,7 +68,9 @@ echo $response;
 
 ```
 
-
+Respond Sample:
+```
+```
 #### Get Insurance Quotation:
 Get Insurance Quotation: This features enables users to check the insurance quotations from specific courier companies on the EasyParcel platform. Users are required to fill in the necessary fields to access the insurance rate information.
 
@@ -166,7 +168,9 @@ echo $response;
 
 ```
 
-
+Respond Sample:
+```
+```
 #### Get Courier Dropoff point
 Get Courier Drop off point: This features enables users to check the available Drop off point for selected courier and zones. Users are required to fill in the necessary fields to access the insurance rate information.
 
@@ -215,7 +219,9 @@ echo $response;
 ```
 
 
-
+Respond Sample:
+```
+```
 
 #### Submit Shipment Orders
 Submit Shipment Orders: This features enables users to submit the shipment orders. Users are required to fill in the necessary fields to access the insurance rate information.
@@ -405,6 +411,13 @@ curl_close($curl);
 echo $response;
 
 ```
+
+
+Respond Sample:
+```
+```
+
+
 #### Get OnDemand Quotation
 Get OnDemand Quotation: This feature enables users to obtain OnDemand Shipment quotations from all courier companies available on the EasyParcel platform. Users need to provide sender and receiver addresses to check the shipment quotation.
 
@@ -474,6 +487,11 @@ $response = curl_exec($curl);
 curl_close($curl);
 echo $response;
 
+```
+
+
+Respond Sample:
+```
 ```
 
 
@@ -620,8 +638,9 @@ echo $response;
 ```
 
 
-
-
+Respond Sample:
+```
+```
 #### References 
 <details id="country-code"> 
   <summary><h4>Country Code</h4></summary> 

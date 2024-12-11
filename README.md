@@ -16,15 +16,15 @@ Get Shipment Quotation: This feature enables users to obtain shipment quotations
 
 Parameters used:
 
-| Requested Parameters | Type | Required | Description |
-| -------------------- | ---- | -------- | ----------- |
-| from_postcode        |      |          |             |
-| from_state           |      |          |             |
-| from_country         |      |          |             |
-| to_postcode          |      |          |             |
-| to_state             |      |          |             |
-| to_country           |      |          |             |
-| weight               |      |          |             |
+| Requested Parameters | Type        | Required | Description               |
+| -------------------- | ----------- | -------- | ------------------------- |
+| from_postcode        | string(10)  | Yes      | Sender's postcode         |
+| from_state           | string(35)  | Yes      | Sender's state            |
+| from_country         | string(2)   | Yes      | Sender's country          |
+| to_postcode          | string(10)  | Yes      | Receiver's postcode       |
+| to_state             | string(35)  | Yes      | Receiver's state          |
+| to_country           | string(2)   | Yes      | Receiver's country        |
+| weight               | double(8,2) | Yes      | The weight of the parcel. |
 
 Sample Code:
 ```
@@ -756,3 +756,16 @@ echo $response;
 |srw|Sarawak|
 |sbh|Sabah|
 |lbn|Labuan|
+
+#### Insurance Courier List
+|Courier|Courier Name|
+|:----|:----|
+|EP-CR0DP|J&T Express|
+|EP-CR0DK|Pickupp|
+|EP-CR0DU|Ninjavan|
+|EP-CR0D3|J&T Cargo|
+|EP-CR0U|TNT|
+|EP-CR0DH|Best Express|
+|EP-CR0D1|City-Link Express|
+|EP-CR0T|FedEx|
+|EP-CR06|Aramex International|

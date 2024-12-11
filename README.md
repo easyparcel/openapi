@@ -622,7 +622,7 @@ echo $response;
 #### References 
 <details id="country-code"> 
   <summary><h4>Country Code</h4></summary> 
-  <div>
+
 | Short Country Name | Full Country Name                     |
 |--------------------|----------------------------------------|
 | SR                 | SURINAME                               |
@@ -815,34 +815,33 @@ echo $response;
 | TV                 | TUVALU                                 |
 | BR                 | BRAZIL                                 |
 | TC                 | TURKS AND CAICOS ISLANDS               |
-  </div>
+
 </details>
 <details id="malaysia-state-code">
   <summary><h4>Malaysia State Code</h4></summary>
-  <div>
-| Short State Name | Full State Name    |
-|------------------|--------------------|
-| jhr              | Johor              |
-| kdh              | Kedah              |
-| ktn              | Kelantan           |
-| mlk              | Melaka             |
-| nsn              | Negeri Sembilan    |
-| phg              | Pahang             |
-| prk              | Perak              |
-| pls              | Perlis             |
-| png              | Pulau Pinang       |
-| sgr              | Selangor           |
-| trg              | Terengganu         |
-| kul              | Kuala Lumpur       |
-| pjy              | Putra Jaya         |
-| srw              | Sarawak            |
-| sbh              | Sabah              |
-| lbn              | Labuan             |
-  </div>
+  
+  | Short State Name | Full State Name    |
+  |------------------|--------------------|
+  | jhr              | Johor              |
+  | kdh              | Kedah              |
+  | ktn              | Kelantan           |
+  | mlk              | Melaka             |
+  | nsn              | Negeri Sembilan    |
+  | phg              | Pahang             |
+  | prk              | Perak              |
+  | pls              | Perlis             |
+  | png              | Pulau Pinang       |
+  | sgr              | Selangor           |
+  | trg              | Terengganu         |
+  | kul              | Kuala Lumpur       |
+  | pjy              | Putra Jaya         |
+  | srw              | Sarawak            |
+  | sbh              | Sabah              |
+  | lbn              | Labuan             |
 </details>
+
 <details id="Insurance-Courier-List">
   <summary><h4>Insurance Courier List</h4></summary>
-  <div>
 | Courier | Courier Name       |
 |---------|--------------------|
 | EP-CR0DP| J&T Express        |
@@ -854,6 +853,5 @@ echo $response;
 | EP-CR0D1| City-Link Express  |
 | EP-CR0T | FedEx              |
 | EP-CR06 | Aramex International|
-  </div>
 </details>
 

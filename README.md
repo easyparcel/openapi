@@ -16,15 +16,15 @@ Get Shipment Quotation: This feature enables users to obtain shipment quotations
 
 Parameters used:
 
-| Requested Parameters | Type        | Required | Description                                                                                                               |
-| -------------------- | ----------- | -------- | ------------------------------------------------------------------------------------------------------------------------- |
-| from_postcode        | string(10)  | Yes      | Sender's postcode                                                                                                         |
-| from_state           | string(35)  | Yes      | Sender's state (refer to [state code](https://github.com/easyparcel/OpenAPI/blob/main/README.md#malaysia-state-code))     |
-| from_country         | string(2)   | Yes      | Sender's country (refer to [country code](https://github.com/easyparcel/OpenAPI/blob/main/README.md#country-code-list))   |
-| to_postcode          | string(10)  | Yes      | Receiver's postcode                                                                                                       |
-| to_state             | string(35)  | Yes      | Receiver's state (refer to [state code](https://github.com/easyparcel/OpenAPI/blob/main/README.md#malaysia-state-code))   |
-| to_country           | string(2)   | Yes      | Receiver's country (refer to [country code](https://github.com/easyparcel/OpenAPI/blob/main/README.md#country-code-list)) |
-| weight               | double(8,2) | Yes      | The weight of the parcel.                                                                                                 |
+| Requested Parameters | Type        | Required | Description                                                    |
+| -------------------- | ----------- | -------- | -------------------------------------------------------------- |
+| from_postcode        | string(10)  | Yes      | Sender's postcode                                              |
+| from_state           | string(35)  | Yes      | Sender's state (refer to [state code](#malaysia-state-code))   |
+| from_country         | string(2)   | Yes      | Sender's country (refer to [country code](#country-code))      |
+| to_postcode          | string(10)  | Yes      | Receiver's postcode                                            |
+| to_state             | string(35)  | Yes      | Receiver's state (refer to [state code](#malaysia-state-code)) |
+| to_country           | string(2)   | Yes      | Receiver's country (refer to [country code](#country-code))    |
+| weight               | double(8,2) | Yes      | The weight of the parcel.                                      |
 
 Sample Code:
 ```
@@ -620,8 +620,8 @@ echo $response;
 
 
 #### References 
-<details> 
-  <summary><h4>Country Code List</h4></summary> 
+<details id="country-code"> 
+  <summary><h4>Country Code</h4></summary> 
   <div>
 | Short Country Name | Full Country Name                     |
 |--------------------|----------------------------------------|
@@ -817,7 +817,7 @@ echo $response;
 | TC                 | TURKS AND CAICOS ISLANDS               |
   </div>
 </details>
-<details>
+<details id="malaysia-state-code">
   <summary><h4>Malaysia State Code</h4></summary>
   <div>
 | Short State Name | Full State Name    |
@@ -840,7 +840,7 @@ echo $response;
 | lbn              | Labuan             |
   </div>
 </details>
-<details>
+<details id="Insurance-Courier-List">
   <summary><h4>Insurance Courier List</h4></summary>
   <div>
 | Courier | Courier Name       |

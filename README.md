@@ -11,7 +11,6 @@ The EasyParcel API allows your application to access current data within EasyPar
 | Production  | https://connect.easyparcel.my/     |
 
 API Functions/Features:
-
 #### Get Shipment Quotation:
 Get Shipment Quotation: This feature enables users to obtain shipment quotations from all courier companies on the EasyParcel platform. Users need to provide sender and receiver addresses to check the shipment quotation.
 
@@ -168,3 +167,47 @@ echo $response;
 
 #### Get Courier Dropoff point
 Get Courier Drop off point: This features enables users to check the available Drop off point for selected courier and zones. Users are required to fill in the necessary fields to access the insurance rate information.
+
+Parameters used:
+
+| Requested Parameters | Type | Required | Description |
+| -------------------- | ---- | -------- | ----------- |
+| courier_id           |      |          |             |
+| country_code         |      |          |             |
+| postcode             |      |          |             |
+| city                 |      |          |             |
+| state_code           |      |          |             |
+
+Sample Code:
+```
+<?php
+
+$curl = curl_init();
+
+curl_setopt_array($curl, array(
+  CURLOPT_URL => 'http://localhost:8023/open_api/shipment/get_courier_dropoff_points',
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_ENCODING => '',
+  CURLOPT_MAXREDIRS => 10,
+  CURLOPT_TIMEOUT => 0,
+  CURLOPT_FOLLOWLOCATION => true,
+  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST => 'POST',
+  CURLOPT_POSTFIELDS =>'{
+    "courier_id": "EP-CR0A",
+    "country_code": "MY",
+    "postcode":"09600",
+    "city":"Lunas",
+    "state_code": "MY-02"
+}',
+  CURLOPT_HTTPHEADER => array(
+    'Content-Type: application/json'
+  ),
+));
+
+$response = curl_exec($curl);
+
+curl_close($curl);
+echo $response;
+
+```

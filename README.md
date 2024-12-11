@@ -72,22 +72,23 @@ echo $response;
 Get Insurance Quotation: This features enables users to check the insurance quotations from specific courier companies on the EasyParcel platform. Users are required to fill in the necessary fields to access the insurance rate information.
 
 
-| Requested Parameters | Type | Required | Description |
-| -------------------- | ---- | -------- | ----------- |
-| courier_id           |      |          |             |
-| items                |      |          |             |
-| quantity             |      |          |             |
-| value                |      |          |             |
-| currency_code        |      |          |             |
-| shipment_weight      |      |          |             |
-| shipment_width       |      |          |             |
-| shipment_height      |      |          |             |
-| coll_postcode        |      |          |             |
-| coll_province_code   |      |          |             |
-| coll_country_code    |      |          |             |
-| deli_postcode        |      |          |             |
-| deli_province_code   |      |          |             |
-| deli_country_code    |      |          |             |
+| Requested Parameters | Type        | Required | Description |
+| -------------------- | ----------- | -------- | ----------- |
+| courier_id           | string(25)  | Yes      |             |
+| items                | string      | Yes      |             |
+| quantity             | int (10)    | Yes      |             |
+| value                | double(8,2) | Yes      |             |
+| currency_code        | string (3)  | Yes      |             |
+| shipment_weight      | double(8,2) | Yes      |             |
+| shipment_width       | double(8,2) | Optional |             |
+| shipment_length      | double(8,2) | Optional |             |
+| shipment_height      | double(8,2) | Optional |             |
+| coll_postcode        | string(10)  | Yes      |             |
+| coll_province_code   | string(35)  | Yes      |             |
+| coll_country_code    | string(2)   | Yes      |             |
+| deli_postcode        | string(10)  | Yes      |             |
+| deli_province_code   | string(35)  | Yes      |             |
+| deli_country_code    | string(2)   | Yes      |             |
 Sample Code:
 ```
 <?php
@@ -170,13 +171,13 @@ Get Courier Drop off point: This features enables users to check the available D
 
 Parameters used:
 
-| Requested Parameters | Type | Required | Description |
-| -------------------- | ---- | -------- | ----------- |
-| courier_id           |      |          |             |
-| country_code         |      |          |             |
-| postcode             |      |          |             |
-| city                 |      |          |             |
-| state_code           |      |          |             |
+| Requested Parameters | Type       | Required | Description |
+| -------------------- | ---------- | -------- | ----------- |
+| courier_id           | string(25) | Yes      |             |
+| country_code         | string(2)  | Yes      |             |
+| postcode             | string(10) | Yes      |             |
+| city                 | string(35) | Yes      |             |
+| state_code           | string(35) | Yes      |             |
 
 Sample Code:
 ```
@@ -219,9 +220,20 @@ echo $response;
 
 Parameters used:
 
-| Requested Parameters | Type | Required | Description |
-| -------------------- | ---- | -------- | ----------- |
-| courier_id           |      |          |             |
+| Requested Parameters | Type        | Required | Description |
+| -------------------- | ----------- | -------- | ----------- |
+| service_id           | string(10)  |          |             |
+| collection_date      | date        |          |             |
+| weight               | double(8,2) |          |             |
+| height               | double(8,2) |          |             |
+| length               | double(8,2) |          |             |
+| width                | double(8,2) |          |             |
+| content              | string      |          |             |
+| currency_code        | string (3)  |          |             |
+| value                | double(8,2) |          |             |
+| quantity             | int         |          |             |
+| insurance_service_id | invoices    |          |             |
+|                      |             |          |             |
 
 Sample code:
 ```
@@ -340,7 +352,7 @@ Parameter used:
 
 | Requested Parameters | Type | Required | Description |
 | -------------------- | ---- | -------- | ----------- |
-| courier_id           |      |          |             |
+|                      |      |          |             |
 
 Sample Code:
 ```

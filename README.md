@@ -482,34 +482,34 @@ Submit OnDemand Orders: This features enables users to submit the OnDemand shipm
 
 Parameter used:
 
-| Requested Parameters      | Type       | Required | Description                                               |
-| ------------------------- | ---------- | -------- | --------------------------------------------------------- |
-| from_country              | string(2)  | Yes      | Sender's country (refer to [country code](#country-code)) |
-| ondemand_service_id       | string     | Yes      | ondemand service id                                       |
-| order                     | int        | Yes      |                                                           |
-| type                      | string     | Yes      | Type/ Categories of the parcel                            |
-| firstName                 | string     | Yes      |                                                           |
-| email                     | string     | Yes      |                                                           |
-| phone_number_country_code | string (2) | Yes      |                                                           |
-| phone_number              | string     | Yes      |                                                           |
-| address                   | string     | Yes      |                                                           |
-| remark                    | string     | Yes      |                                                           |
-| schedule_pickup_date      | date       | Yes      |                                                           |
-| schedule_pickup_time      | time       | Yes      |                                                           |
-| timezone                  | string     | Yes      |                                                           |
+| Requested Parameters      | Type       | Required | Description                                                                |
+| ------------------------- | ---------- | -------- | -------------------------------------------------------------------------- |
+| from_country              | string(2)  | Yes      | Sender's country (refer to [country code](#country-code))                  |
+| ondemand_service_id       | string     | Yes      | ondemand service id                                                        |
+| order                     | int        | Yes      | Order sequence                                                             |
+| type                      | string     | Yes      | Type/ Categories of the parcel                                             |
+| firstName                 | string     | Yes      | Sender's first name                                                        |
+| email                     | string     | Yes      | Sender's email name                                                        |
+| phone_number_country_code | string (2) | Yes      | Sender's phone number country code(refer to [country code](#country-code)) |
+| phone_number              | string     | Yes      | Sender's phone number                                                      |
+| address                   | string     | Yes      | Address of the parcel                                                      |
+| remark                    | string     | Yes      | Remarks for the parcel and shipping                                        |
+| schedule_pickup_date      | date       | Yes      | Preferred parcel pickup date                                               |
+| schedule_pickup_time      | time       | Yes      | Preferred parcel pickup time                                               |
+| timezone                  | string     | Yes      | Timezone of the parcel located at                                          |
 **Coordinates**
 
-| Requested Parameters | Type   | Required | Description |
-| -------------------- | ------ | -------- | ----------- |
-| latitude             | double | Yes      |             |
-| longitude            | double | Yes      |             |
+| Requested Parameters | Type   | Required | Description                      |
+| -------------------- | ------ | -------- | -------------------------------- |
+| latitude             | double | Yes      | latitude of the parcel location  |
+| longitude            | double | Yes      | longitude of the parcel location |
 
 **Package**
 
-| Requested Parameters | Type   | Required | Description |
-| -------------------- | ------ | -------- | ----------- |
-| quantity             | int    | Yes      |             |
-| description          | string | Yes      |             |
+| Requested Parameters | Type   | Required | Description                  |
+| -------------------- | ------ | -------- | ---------------------------- |
+| quantity             | int    | Yes      | Quantity of the parcel       |
+| description          | string | Yes      | Parcel / content description |
 **Dimension**
 
 | Requested Parameters | Type         | Required | Description          |

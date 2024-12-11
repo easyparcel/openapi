@@ -16,15 +16,15 @@ Get Shipment Quotation: This feature enables users to obtain shipment quotations
 
 Parameters used:
 
-| Requested Parameters | Type        | Required | Description               |
-| -------------------- | ----------- | -------- | ------------------------- |
-| from_postcode        | string(10)  | Yes      | Sender's postcode         |
-| from_state           | string(35)  | Yes      | Sender's state            |
-| from_country         | string(2)   | Yes      | Sender's country          |
-| to_postcode          | string(10)  | Yes      | Receiver's postcode       |
-| to_state             | string(35)  | Yes      | Receiver's state          |
-| to_country           | string(2)   | Yes      | Receiver's country        |
-| weight               | double(8,2) | Yes      | The weight of the parcel. |
+| Requested Parameters | Type        | Required | Description                            |
+| -------------------- | ----------- | -------- | -------------------------------------- |
+| from_postcode        | string(10)  | Yes      | Sender's postcode                      |
+| from_state           | string(35)  | Yes      | Sender's state                         |
+| from_country         | string(2)   | Yes      | Sender's country [[Country Code List]] |
+| to_postcode          | string(10)  | Yes      | Receiver's postcode                    |
+| to_state             | string(35)  | Yes      | Receiver's state                       |
+| to_country           | string(2)   | Yes      | Receiver's country                     |
+| weight               | double(8,2) | Yes      | The weight of the parcel.              |
 
 Sample Code:
 ```
@@ -72,23 +72,23 @@ echo $response;
 Get Insurance Quotation: This features enables users to check the insurance quotations from specific courier companies on the EasyParcel platform. Users are required to fill in the necessary fields to access the insurance rate information.
 
 
-| Requested Parameters | Type        | Required | Description |
-| -------------------- | ----------- | -------- | ----------- |
-| courier_id           | string(25)  | Yes      |             |
-| items                | string      | Yes      |             |
-| quantity             | int (10)    | Yes      |             |
-| value                | double(8,2) | Yes      |             |
-| currency_code        | string (3)  | Yes      |             |
-| shipment_weight      | double(8,2) | Yes      |             |
-| shipment_width       | double(8,2) | Optional |             |
-| shipment_length      | double(8,2) | Optional |             |
-| shipment_height      | double(8,2) | Optional |             |
-| coll_postcode        | string(10)  | Yes      |             |
-| coll_province_code   | string(35)  | Yes      |             |
-| coll_country_code    | string(2)   | Yes      |             |
-| deli_postcode        | string(10)  | Yes      |             |
-| deli_province_code   | string(35)  | Yes      |             |
-| deli_country_code    | string(2)   | Yes      |             |
+| Requested Parameters | Type        | Required | Description                   |
+| -------------------- | ----------- | -------- | ----------------------------- |
+| courier_id           | string(25)  | Yes      | Courier Identification number |
+| items                | string      | Yes      | Item Name                     |
+| quantity             | int (10)    | Yes      | Quantity of the item          |
+| value                | double(8,2) | Yes      | Value of the item             |
+| currency_code        | string (3)  | Yes      | Country's currency            |
+| shipment_weight      | double(8,2) | Yes      | Weight of item                |
+| shipment_width       | double(8,2) | Optional | Width of item                 |
+| shipment_length      | double(8,2) | Optional | Length of item                |
+| shipment_height      | double(8,2) | Optional | Height of item                |
+| coll_postcode        | string(10)  | Yes      | Sender's post code            |
+| coll_province_code   | string(35)  | Yes      | Sender's province code        |
+| coll_country_code    | string(2)   | Yes      | Sender's country code         |
+| deli_postcode        | string(10)  | Yes      | Receiver's post code          |
+| deli_province_code   | string(35)  | Yes      | Receiver's province code      |
+| deli_country_code    | string(2)   | Yes      | Receiver's country code       |
 Sample Code:
 ```
 <?php
@@ -171,13 +171,13 @@ Get Courier Drop off point: This features enables users to check the available D
 
 Parameters used:
 
-| Requested Parameters | Type       | Required | Description |
-| -------------------- | ---------- | -------- | ----------- |
-| courier_id           | string(25) | Yes      |             |
-| country_code         | string(2)  | Yes      |             |
-| postcode             | string(10) | Yes      |             |
-| city                 | string(35) | Yes      |             |
-| state_code           | string(35) | Yes      |             |
+| Requested Parameters | Type       | Required | Description                   |
+| -------------------- | ---------- | -------- | ----------------------------- |
+| courier_id           | string(25) | Yes      | Courier identification number |
+| country_code         | string(2)  | Yes      | Dropoff point's country code  |
+| postcode             | string(10) | Yes      | Dropoff point's postcode      |
+| city                 | string(35) | Yes      | Dropoff point's city          |
+| state_code           | string(35) | Yes      | Dropoff point's state_code    |
 
 Sample Code:
 ```
@@ -223,68 +223,74 @@ Parameters used:
 
 | Requested Parameters | Type        | Required | Description |
 | -------------------- | ----------- | -------- | ----------- |
-| service_id           | string(10)  |          |             |
-| collection_date      | date        |          |             |
-| weight               | double(8,2) |          |             |
-| height               | double(8,2) |          |             |
-| length               | double(8,2) |          |             |
-| width                | double(8,2) |          |             |
+| service_id           | string(10)  | Yes      |             |
+| collection_date      | date        | Yes      |             |
+| weight               | double(8,2) | Yes      |             |
+| height               | double(8,2) | Yes      |             |
+| length               | double(8,2) | Yes      |             |
+| width                | double(8,2) | Yes      |             |
+
 
 **Items**
 
 | Requested Parameters | Type        | Required | Description |
 | -------------------- | ----------- | -------- | ----------- |
-| content              | string      |          |             |
-| currency_code        | string (3)  |          |             |
-| value                | double(8,2) |          |             |
-| quantity             | int         |          |             |
-| insurance_service_id | string      |          |             |
-| invoices             | string      |          |             |
-| photos               | string      |          |             |
+| content              | string      | Yes      |             |
+| currency_code        | string (3)  | Yes      |             |
+| value                | double(8,2) | Yes      |             |
+| quantity             | int         | Yes      |             |
+| insurance_service_id | string      | Yes      |             |
+| invoices             | string      | Yes      |             |
+| photos               | string      | Yes      |             |
+
 
 **Origin**
 
 | Requested Parameters      | Type      | Required | Description |
 | ------------------------- | --------- | -------- | ----------- |
-| name                      | string    |          |             |
-| company                   | string    |          |             |
-| phone_number_country_code | string    |          |             |
-| phone_number              | string    |          |             |
-| email                     | string    |          |             |
-| address_1                 | string    |          |             |
-| address_2                 | string    |          |             |
-| postcode                  | string    |          |             |
-| town                      | string    |          |             |
-| province_code             | string    |          |             |
-| country_code              | string(2) |          |             |
+| name                      | string    | Yes      |             |
+| company                   | string    | Yes      |             |
+| phone_number_country_code | string    | Yes      |             |
+| phone_number              | string    | Yes      |             |
+| email                     | string    | Yes      |             |
+| address_1                 | string    | Yes      |             |
+| address_2                 | string    | Yes      |             |
+| postcode                  | string    | Yes      |             |
+| town                      | string    | Yes      |             |
+| province_code             | string    | Yes      |             |
+| country_code              | string(2) | Yes      |             |
+
 **Destination**
 
 | Requested Parameters      | Type      | Required | Description |
 | ------------------------- | --------- | -------- | ----------- |
-| name                      | string    |          |             |
-| company                   | string    |          |             |
-| phone_number_country_code | string    |          |             |
-| phone_number              | string    |          |             |
-| email                     | string    |          |             |
-| address_1                 | string    |          |             |
-| address_2                 | string    |          |             |
-| postcode                  | string    |          |             |
-| town                      | string    |          |             |
-| province_code             | string    |          |             |
-| country_code              | string(2) |          |             |
+| name                      | string    | Yes      |             |
+| company                   | string    | Yes      |             |
+| phone_number_country_code | string    | Yes      |             |
+| phone_number              | string    | Yes      |             |
+| email                     | string    | Yes      |             |
+| address_1                 | string    | Yes      |             |
+| address_2                 | string    | Yes      |             |
+| postcode                  | string    | Yes      |             |
+| town                      | string    | Yes      |             |
+| province_code             | string    | Yes      |             |
+| country_code              | string(2) | Yes      |             |
+
 **Notification**
 
 | Requested Parameters | Type    | Required | Description |
 | -------------------- | ------- | -------- | ----------- |
-| sms                  | boolean |          |             |
-| email                | boolean |          |             |
-| whatsapp             | boolean |          |             |
+| sms                  | boolean | Yes      |             |
+| email                | boolean | Yes      |             |
+| whatsapp             | boolean | Yes      |             |
+
 
 **Airways Bills Branding**
 
 | Requested Parameters | Type    | Required | Description |
 | -------------------- | ------- | -------- | ----------- |
-| enable               | boolean |          |             |
+| enable               | boolean | Yes      |             |
+
 
 Sample code:
 ```
@@ -405,17 +411,19 @@ Parameter used:
 
 | Requested Parameters | Type   | Required | Description |
 | -------------------- | ------ | -------- | ----------- |
-| schedule_pickup_date | date   |          |             |
-| schedule_pickup_time | time   |          |             |
-| timezone             | string |          |             |
-| address              | string |          |             |
-| type                 | string |          |             |
+| schedule_pickup_date | date   | Yes      |             |
+| schedule_pickup_time | time   | Yes      |             |
+| timezone             | string | Yes      |             |
+| address              | string | Yes      |             |
+| type                 | string | Yes      |             |
+
 **coordinates**
 
 | Requested Parameters | Type   | Required | Description |
 | -------------------- | ------ | -------- | ----------- |
-| latitude             | double |          |             |
-| longitude            | double |          |             |
+| latitude             | double | Yes      |             |
+| longitude            | double | Yes      |             |
+
 
 Sample Code:
 ```

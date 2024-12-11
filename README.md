@@ -620,11 +620,9 @@ echo $response;
 
 
 #### References 
-
 <details> 
   <summary><h4>Country Code List</h4></summary> 
   <div>
-    
 | Short Country Name | Full Country Name                     |
 |--------------------|----------------------------------------|
 | SR                 | SURINAME                               |
@@ -819,11 +817,9 @@ echo $response;
 | TC                 | TURKS AND CAICOS ISLANDS               |
   </div>
 </details>
-
 <details>
   <summary><h4>Malaysia State Code</h4></summary>
   <div>
-
 | Short State Name | Full State Name    |
 |------------------|--------------------|
 | jhr              | Johor              |
@@ -842,14 +838,11 @@ echo $response;
 | srw              | Sarawak            |
 | sbh              | Sabah              |
 | lbn              | Labuan             |
-
   </div>
 </details>
-
 <details>
   <summary><h4>Insurance Courier List</h4></summary>
   <div>
-
 | Courier | Courier Name       |
 |---------|--------------------|
 | EP-CR0DP| J&T Express        |
@@ -861,7 +854,6 @@ echo $response;
 | EP-CR0D1| City-Link Express  |
 | EP-CR0T | FedEx              |
 | EP-CR06 | Aramex International|
-
   </div>
 </details>
 

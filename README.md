@@ -12,7 +12,7 @@ The EasyParcel API allows your application to access current data within EasyPar
 
 API Functions/Features:
 #### Get Shipment Quotation:
-Get Shipment Quotation: This feature enables users to obtain shipment quotations from all courier companies on the EasyParcel platform. Users need to provide sender and receiver addresses to check the shipment quotation.
+Get Shipment Quotation: This feature enables users to obtain shipment quotations from all courier companies available on the EasyParcel platform. Users need to provide sender and receiver addresses to check the shipment quotation.
 
 Parameters used:
 
@@ -217,6 +217,7 @@ echo $response;
 
 
 #### Submit Shipment Orders
+Submit Shipment Orders: This features enables users to submit the shipment orders. Users are required to fill in the necessary fields to access the insurance rate information.
 
 Parameters used:
 
@@ -228,12 +229,62 @@ Parameters used:
 | height               | double(8,2) |          |             |
 | length               | double(8,2) |          |             |
 | width                | double(8,2) |          |             |
+
+**Items**
+
+| Requested Parameters | Type        | Required | Description |
+| -------------------- | ----------- | -------- | ----------- |
 | content              | string      |          |             |
 | currency_code        | string (3)  |          |             |
 | value                | double(8,2) |          |             |
 | quantity             | int         |          |             |
-| insurance_service_id | invoices    |          |             |
-|                      |             |          |             |
+| insurance_service_id | string      |          |             |
+| invoices             | string      |          |             |
+| photos               | string      |          |             |
+
+**Origin**
+
+| Requested Parameters      | Type      | Required | Description |
+| ------------------------- | --------- | -------- | ----------- |
+| name                      | string    |          |             |
+| company                   | string    |          |             |
+| phone_number_country_code | string    |          |             |
+| phone_number              | string    |          |             |
+| email                     | string    |          |             |
+| address_1                 | string    |          |             |
+| address_2                 | string    |          |             |
+| postcode                  | string    |          |             |
+| town                      | string    |          |             |
+| province_code             | string    |          |             |
+| country_code              | string(2) |          |             |
+**Destination**
+
+| Requested Parameters      | Type      | Required | Description |
+| ------------------------- | --------- | -------- | ----------- |
+| name                      | string    |          |             |
+| company                   | string    |          |             |
+| phone_number_country_code | string    |          |             |
+| phone_number              | string    |          |             |
+| email                     | string    |          |             |
+| address_1                 | string    |          |             |
+| address_2                 | string    |          |             |
+| postcode                  | string    |          |             |
+| town                      | string    |          |             |
+| province_code             | string    |          |             |
+| country_code              | string(2) |          |             |
+**Notification**
+
+| Requested Parameters | Type    | Required | Description |
+| -------------------- | ------- | -------- | ----------- |
+| sms                  | boolean |          |             |
+| email                | boolean |          |             |
+| whatsapp             | boolean |          |             |
+
+**Airways Bills Branding**
+
+| Requested Parameters | Type    | Required | Description |
+| -------------------- | ------- | -------- | ----------- |
+| enable               | boolean |          |             |
 
 Sample code:
 ```
@@ -348,11 +399,23 @@ echo $response;
 
 ```
 #### Get OnDemand Quotation
+Get OnDemand Quotation: This feature enables users to obtain OnDemand Shipment quotations from all courier companies available on the EasyParcel platform. Users need to provide sender and receiver addresses to check the shipment quotation.
+
 Parameter used:
 
-| Requested Parameters | Type | Required | Description |
-| -------------------- | ---- | -------- | ----------- |
-|                      |      |          |             |
+| Requested Parameters | Type   | Required | Description |
+| -------------------- | ------ | -------- | ----------- |
+| schedule_pickup_date | date   |          |             |
+| schedule_pickup_time | time   |          |             |
+| timezone             | string |          |             |
+| address              | string |          |             |
+| type                 | string |          |             |
+**coordinates**
+
+| Requested Parameters | Type   | Required | Description |
+| -------------------- | ------ | -------- | ----------- |
+| latitude             | double |          |             |
+| longitude            | double |          |             |
 
 Sample Code:
 ```
@@ -406,12 +469,51 @@ echo $response;
 
 
 #### Submit OnDemand Order
+Submit OnDemand Orders: This features enables users to submit the OnDemand shipment orders. Users are required to fill in the necessary fields to access the insurance rate information.
+
 Parameter used:
 
-| Requested Parameters | Type | Required | Description |
-| -------------------- | ---- | -------- | ----------- |
-| courier_id           |      |          |             |
+| Requested Parameters      | Type       | Required | Description |
+| ------------------------- | ---------- | -------- | ----------- |
+| from_country              | string(2)  | Yes      |             |
+| ondemand_service_id       | string     | Yes      |             |
+| order                     | int        | Yes      |             |
+| type                      | string     | Yes      |             |
+| firstName                 | string     | Yes      |             |
+| email                     | string     | Yes      |             |
+| phone_number_country_code | string (2) | Yes      |             |
+| phone_number              | string     | Yes      |             |
+| address                   | string     | Yes      |             |
+| remark                    | string     | Yes      |             |
+| schedule_pickup_date      | date       | Yes      |             |
+| schedule_pickup_time      | time       | Yes      |             |
+| timezone                  | string     | Yes      |             |
+**Coordinates**
 
+| Requested Parameters | Type   | Required | Description |
+| -------------------- | ------ | -------- | ----------- |
+| latitude             | double | Yes      |             |
+| longitude            | double | Yes      |             |
+
+**Package**
+
+| Requested Parameters | Type   | Required | Description |
+| -------------------- | ------ | -------- | ----------- |
+| quantity             | int    | Yes      |             |
+| description          | string | Yes      |             |
+**Dimension**
+
+| Requested Parameters | Type         | Required | Description |
+| -------------------- | ------------ | -------- | ----------- |
+| height               | int          | Yes      |             |
+| width                | double (8,2) | Yes      |             |
+| length               | double (8,2) | Yes      |             |
+| weight               | double (8,2) | Yes      |             |
+**metadata**
+
+| Requested Parameters | Type       | Required | Description |
+| -------------------- | ---------- | -------- | ----------- |
+| quotationId          | string(35) | Yes      |             |
 Sample code:
 ```
 <?php
@@ -509,7 +611,7 @@ echo $response;
 
 
 
-### References 
+#### References 
 #### Country Code List
 
 |Short Country Name|Full Country Name|

@@ -16,15 +16,15 @@ Get Shipment Quotation: This feature enables users to obtain shipment quotations
 
 Parameters used:
 
-| Requested Parameters | Type        | Required | Description                            |
-| -------------------- | ----------- | -------- | -------------------------------------- |
-| from_postcode        | string(10)  | Yes      | Sender's postcode                      |
-| from_state           | string(35)  | Yes      | Sender's state                         |
-| from_country         | string(2)   | Yes      | Sender's country [[Country Code List]] |
-| to_postcode          | string(10)  | Yes      | Receiver's postcode                    |
-| to_state             | string(35)  | Yes      | Receiver's state                       |
-| to_country           | string(2)   | Yes      | Receiver's country                     |
-| weight               | double(8,2) | Yes      | The weight of the parcel.              |
+| Requested Parameters | Type        | Required | Description                                                                                                               |
+| -------------------- | ----------- | -------- | ------------------------------------------------------------------------------------------------------------------------- |
+| from_postcode        | string(10)  | Yes      | Sender's postcode                                                                                                         |
+| from_state           | string(35)  | Yes      | Sender's state (refer to [state code](https://github.com/easyparcel/OpenAPI/blob/main/README.md#malaysia-state-code))     |
+| from_country         | string(2)   | Yes      | Sender's country (refer to [country code](https://github.com/easyparcel/OpenAPI/blob/main/README.md#country-code-list))   |
+| to_postcode          | string(10)  | Yes      | Receiver's postcode                                                                                                       |
+| to_state             | string(35)  | Yes      | Receiver's state (refer to [state code](https://github.com/easyparcel/OpenAPI/blob/main/README.md#malaysia-state-code))   |
+| to_country           | string(2)   | Yes      | Receiver's country (refer to [country code](https://github.com/easyparcel/OpenAPI/blob/main/README.md#country-code-list)) |
+| weight               | double(8,2) | Yes      | The weight of the parcel.                                                                                                 |
 
 Sample Code:
 ```

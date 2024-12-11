@@ -215,6 +215,289 @@ echo $response;
 
 
 
+#### Submit Shipment Orders
+
+Parameters used:
+
+| Requested Parameters | Type | Required | Description |
+| -------------------- | ---- | -------- | ----------- |
+| courier_id           |      |          |             |
+
+Sample code:
+```
+<?php
+
+$curl = curl_init();
+
+curl_setopt_array($curl, array(
+  CURLOPT_URL => 'https://developer.easyparcel.com/open_api/shipment/submit_orders',
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_ENCODING => '',
+  CURLOPT_MAXREDIRS => 10,
+  CURLOPT_TIMEOUT => 0,
+  CURLOPT_FOLLOWLOCATION => true,
+  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST => 'POST',
+  CURLOPT_POSTFIELDS =>'{
+  "list": [
+    {
+      "service_id": "EP-CS0IW",
+      "collection_date": "2024-10-22",
+       "weight": 0.5,
+        "height": 10,
+        "length": 10,
+        "width": 10,
+      "item": [
+        {
+          "content": "Electronics",
+          "weight": 0.5,
+          "height": 100,
+          "length": 100,
+          "width": 100,
+          "currency_code": "MYR",
+          "value": 200,
+          "quantity": 1,
+          "insurance_purchase":{
+                "insurance_service_id":23,
+                "invoices": "https://ep-website-media.s3.ap-southeast-1.amazonaws.com/my/wp-content/uploads/2024/02/sf-express-exd.webp",
+                "photos": "https://s3-ap-southeast-1.amazonaws.com/easyparcel/Public/source/general/img/couriers/DHLeC.jpg"
+            }
+        },
+        {
+          "content": "Electronics 2",
+          "weight": 0.7,
+          "height": 120,
+          "length": 100,
+          "width": 100,
+          "currency_code": "MYR",
+          "value": 500,
+          "quantity": 1,
+          "insurance_purchase":{
+                "insurance_service_id":23,
+                "invoices": "https://ep-website-media.s3.ap-southeast-1.amazonaws.com/my/wp-content/uploads/2024/02/sf-express-exd.webp"
+            }
+        }
+
+      ],
+      "origin": {
+        "name": "John Doe",
+        "company": "ABC Corp",
+        "phone_number_country_code": "+60",
+        "phone_number": "1163642281",
+        "email": "weikeong.liew@easyparcel.com",
+        "address_1": "123 Main St",
+        "address_2": "Apt 4B",
+        "postcode": "11900",
+        "town": "Lunas",
+        "province_code": "MY-07",
+        "country_code": "MY"
+      },
+      "destination": {
+        "name": "Jane Smith",
+        "company": "XYZ Inc",
+        "phone_number_country_code": "+60",
+        "phone_number": "1163642281",
+        "email": "weikeong.liew@easyparcel.com",
+        "address_1": "456 High St",
+        "address_2": "Floor 2",
+        "postcode": "11900",
+        "town": "Bayan Lepas",
+        "province_code": "MY-07",
+        "country_code": "MY",
+        "notification": {
+          "sms": {
+            "enable": true
+          },
+          "email": {
+            "enable": true
+          },
+          "whatsapp": {
+            "enable": true
+          }
+        }
+      },
+      "awb_branding": {
+        "enable": true
+      }
+   
+    }
+  ]
+}',
+  CURLOPT_HTTPHEADER => array(
+    'Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhcHAiOnsiY2xpZW50X2lkIjoiNjU3MzEyOTYtMzkzZi00MmJjLTllNTktY2E5NjcyYmViNmY2In0sInVzZXIiOnsiaWQiOiI0ZTAyMTA1YzQ2NmNmYzg4Y2U4MmQ2NTEwMGI0YzBhZEptbnJDT1hSNmV6UHRtSFUyWkNyYmc9PSIsImVhc3lfYWNjb3VudF9pZCI6IjA5ZjcxMjc5LTBjMGItNDcxOS05OTM5LWMwMzVjYWVlYzYxOSIsImFjY291bnRfaWQiOiI4NzIwNjYwIn0sImlhdCI6MTczMTg5OTM0MCwiaXNzIjoiZWFzeXBhcmNlbCIsImF1ZCI6ImVhc3lwYXJjZWwiLCJleHAiOjE3MzE5MzUzNDB9.S2yUdWfzIPZETtQhvc9dRmtVq8Wz_HBNDU5N-VJFblU',
+    'Content-Type: application/json'
+  ),
+));
+
+$response = curl_exec($curl);
+
+curl_close($curl);
+echo $response;
+
+```
+#### Get OnDemand Quotation
+Parameter used:
+
+| Requested Parameters | Type | Required | Description |
+| -------------------- | ---- | -------- | ----------- |
+| courier_id           |      |          |             |
+
+Sample Code:
+```
+<?php
+
+$curl = curl_init();
+
+curl_setopt_array($curl, array(
+  CURLOPT_URL => 'http://localhost:8023/open_api/ondemand/quotation',
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_ENCODING => '',
+  CURLOPT_MAXREDIRS => 10,
+  CURLOPT_TIMEOUT => 0,
+  CURLOPT_FOLLOWLOCATION => true,
+  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST => 'POST',
+  CURLOPT_POSTFIELDS =>'{
+    "schedule_pickup_date": "2024-11-30",
+    "schedule_pickup_time": "11:48:35",
+    "timezone": "Asia/Kuala_Lumpur",
+    "waypoint_list": [
+        {
+            "coordinates": {
+                "latitude": 5.342720241204454,
+                "longitude": 100.28204988381822
+            },
+            "address": "Kawasan Mendaki Bukit Jambul, Lintang Bukit Jambul 1, Bukit Jambul Indah, Bayan Lepas, Mukim 13 Paya Terubong, 11900, Timur Laut, Pulau Pinang, Malaysia",
+            "type": "pickup"
+        },
+        {
+            "coordinates": {
+                "latitude": 5.325513957,
+                "longitude": 100.2862732
+            },
+            "address": "Suntech @ Penang Cybercity, 1, Lintang Mayang Pasir 3, Bandar Bayan Baru, Bayan Lepas, Mukim 12 Bayan Lepas, 11950, Barat Daya, Pulau Pinang, Malaysia",
+            "type": "dropoff"
+        }
+    ]
+}',
+  CURLOPT_HTTPHEADER => array(
+    'Content-Type: application/json'
+  ),
+));
+
+$response = curl_exec($curl);
+
+curl_close($curl);
+echo $response;
+
+```
+
+
+#### Submit OnDemand Order
+Parameter used:
+
+| Requested Parameters | Type | Required | Description |
+| -------------------- | ---- | -------- | ----------- |
+| courier_id           |      |          |             |
+
+Sample code:
+```
+<?php
+
+$curl = curl_init();
+
+curl_setopt_array($curl, array(
+  CURLOPT_URL => 'http://localhost:8023/open_api/ondemand/order',
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_ENCODING => '',
+  CURLOPT_MAXREDIRS => 10,
+  CURLOPT_TIMEOUT => 0,
+  CURLOPT_FOLLOWLOCATION => true,
+  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST => 'POST',
+  CURLOPT_POSTFIELDS =>'
+{
+    "from_country": "MY",
+    "ondemand_service_id": 3,
+    "waypoint_list": [
+        {
+            "order": 0,
+            "coordinates": {
+                "latitude": 5.342720241204454,
+                "longitude": 100.28204988381822
+            },
+            "type": "pickup",
+            "firstName": "111",
+            "email": "as@as.as",
+            "package": [
+                {
+                    "quantity": "1",
+                    "description": "1",
+                    "dimensions": {
+                        "height": "1",
+                        "width": "1",
+                        "length": "1",
+                        "weight": "1"
+                    }
+                }
+            ],
+            "phone_number_country_code": "MY",
+            "phone_number": "1278491622",
+            "address": "L1 Lobby, Suntec City Tower 1 & 2, 7 Temasek Boulevard, Singapore, 038987",
+            "remark": "1"
+        },
+        {
+            "order": 1,
+            "coordinates": {
+                "latitude": 5.325513957,
+                "longitude": 100.2862732
+            },
+            "type": "dropoff",
+            "firstName": "222",
+            "email": "as@as.as",
+            "package": [
+                {
+                    "quantity": "2",
+                    "description": "2",
+                    "dimensions": {
+                        "height": "2",
+                        "width": "2",
+                        "length": "2",
+                        "weight": "2"
+                    }
+                }
+            ],
+            "phone_number_country_code": "MY",
+            "phone_number": "127491622",
+            "address": "Terminal 1 Departure - Changi Airport, 80 Airport Boulevard, Singapore, 819642",
+            "remark": "222"
+        }
+    ],
+
+    "schedule_pickup_date": "2024-12-10",
+    "schedule_pickup_time": "17:35:15",
+    "timezone": "Asia/Kuala_Lumpur",
+    "metadata": {
+        "quotationId": "3114850556997669249"
+    }
+}',
+  CURLOPT_HTTPHEADER => array(
+    'Content-Type: application/json'
+  ),
+));
+
+$response = curl_exec($curl);
+
+curl_close($curl);
+echo $response;
+
+
+```
+
+
+
+
+### References 
 #### Country Code List
 
 |Short Country Name|Full Country Name|
@@ -453,3 +736,23 @@ echo $response;
 |AL|ALBANIA|
 |AF|AFGHANISTAN|
 
+
+#### Malaysia State Code
+|Short State Name|Full State Name|
+|:----|:----|
+|jhr|Johor|
+|kdh|Kedah|
+|ktn|Kelantan|
+|mlk|Melaka|
+|nsn|Negeri Sembilan|
+|phg|Pahang|
+|prk|Perak|
+|pls|Perlis|
+|png|Pulau Pinang|
+|sgr|Selangor|
+|trg|Terengganu|
+|kul|Kuala Lumpur|
+|pjy|Putra Jaya|
+|srw|Sarawak|
+|sbh|Sabah|
+|lbn|Labuan|

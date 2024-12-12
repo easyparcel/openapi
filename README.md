@@ -529,6 +529,8 @@ Parameter used:
 | schedule_pickup_date      | date       | Yes      | Preferred parcel pickup date                                               |
 | schedule_pickup_time      | time       | Yes      | Preferred parcel pickup time                                               |
 | timezone                  | string     | Yes      | Timezone of the parcel located at                                          |
+
+
 **Coordinates**
 
 | Requested Parameters | Type   | Required | Description                      |
@@ -536,12 +538,15 @@ Parameter used:
 | latitude             | double | Yes      | latitude of the parcel location  |
 | longitude            | double | Yes      | longitude of the parcel location |
 
+
 **Package**
 
 | Requested Parameters | Type   | Required | Description                  |
 | -------------------- | ------ | -------- | ---------------------------- |
 | quantity             | int    | Yes      | Quantity of the parcel       |
 | description          | string | Yes      | Parcel / content description |
+
+
 **Dimension**
 
 | Requested Parameters | Type         | Required | Description          |
@@ -550,6 +555,7 @@ Parameter used:
 | width                | double (8,2) | Yes      | Width of the parcel  |
 | length               | double (8,2) | Yes      | Length of the parcel |
 | weight               | double (8,2) | Yes      | Weight of the parcel |
+
 
 **metadata**
 

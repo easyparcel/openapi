@@ -40,6 +40,7 @@ Parameters used:
 | to_country           | string(2)   | Yes      | Receiver's country (refer to [country code](#country-code))    |
 | weight               | double(8,2) | Yes      | The weight of the parcel.                                      |
 
+
 Request Sample Code:
 ```
 <?php

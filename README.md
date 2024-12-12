@@ -28,6 +28,9 @@ The EasyParcel API allows your application to access current data within EasyPar
 #### Get Shipment Quotation:
 Get Shipment Quotation: This feature enables users to obtain shipment quotations from all courier companies available on the EasyParcel platform. Users need to provide sender and receiver addresses to check the shipment quotation.
 
+<details> 
+  <summary><h4>Sent Request</h4></summary>
+  
 Parameters used:
 
 | Requested Parameters | Type        | Required | Description                                                    |
@@ -81,10 +84,16 @@ curl_close($curl);
 echo $response;
 
 ```
+</details> 
 
+<details> 
+  <summary><h4>Respond</h4></summary>
+  
 Respond Sample:
 ```
 ```
+</details>
+
 #### Get Insurance Quotation:
 Get Insurance Quotation: This features enables users to check the insurance quotations from specific courier companies on the EasyParcel platform. Users are required to fill in the necessary fields to access the insurance rate information.
 

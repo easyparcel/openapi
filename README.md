@@ -550,6 +550,7 @@ Parameter used:
 | width                | double (8,2) | Yes      | Width of the parcel  |
 | length               | double (8,2) | Yes      | Length of the parcel |
 | weight               | double (8,2) | Yes      | Weight of the parcel |
+
 **metadata**
 
 | Requested Parameters | Type       | Required | Description                        |

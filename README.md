@@ -1825,6 +1825,8 @@ Respond Sample:
 ```
 </details>
 
+---
+<br>
 
 ### References
 
@@ -1847,9 +1849,6 @@ API Return Status
 | 503         | Service Unavailable   | The server is currently unavailable (because it is overloaded or down for maintenance).                     |
 | 504         | Gateway Timeout       | The server was acting as a gateway or proxy and did not receive a timely response from the upstream server. |
 </details> 
-
-
-
 <details id="country-code"> 
   <summary><h4>Country Code</h4></summary> 
 
@@ -2045,18 +2044,15 @@ API Return Status
 | TV                 | TUVALU                                 |
 | BR                 | BRAZIL                                 |
 | TC                 | TURKS AND CAICOS ISLANDS               |
-
 </details>
-
 <details id="iso3166"> 
   <summary><h4>ISO_3166</h4></summary> 
 
 At EasyParcel, we adhere to the ISO 3166 standard for the identification of states, provinces, and zones. For example, the code "MY-07" corresponds to the state of Penang in Malaysia.
 
 ISO 3166 is a standard published by the International Organization for Standardization (ISO) that defines codes for the names of countries, dependent territories, special areas of geographical interest, and their principal subdivisions (e.g., provinces or states). The official name of the standard is Codes for the representation of names of countries and their subdivisions.
-
 </details>
-<details id="malaysia-state-code">
+<details id="malaysia-state-code" >
   <summary><h4>Malaysia State Code</h4></summary>
   
   | Short State Name | Full State Name    |
@@ -2078,10 +2074,9 @@ ISO 3166 is a standard published by the International Organization for Standardi
   | sbh              | Sabah              |
   | lbn              | Labuan             |
 </details>
-
 <details id="Insurance-Courier-List">
   <summary><h4>Insurance Courier List</h4></summary>
-  
+ 
 | Courier | Courier Name       |
 |---------|--------------------|
 | EP-CR0DP| J&T Express        |

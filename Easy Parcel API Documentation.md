@@ -61,8 +61,6 @@ Get Shipment Quotation: This feature enables users to obtain shipment quotations
 
 <details id="Request"> 
   <summary><h5>Request:</h5></summary> 
- 
-##### Request
 
 Parameters used:
 L1
@@ -123,8 +121,6 @@ echo $response;
 
 <details id="Return"> 
   <summary><h5>Return:</h5></summary>
- 
-##### Return
 
 Returned Parameters:
 L1
@@ -165,7 +161,7 @@ L2
 | cod_service_max_cod_amount | double  | Max amount for the COD service                               |
 | cod_charges_conditions     | string  | Conditions under which Cash on Delivery (COD) charges apply. |
 
-Respond Sample:
+Return Sample:
 ```
 {
     "status_code": 200,
@@ -387,8 +383,6 @@ Get Insurance Quotation: This features enables users to check the insurance quot
 
 <details id="Request"> 
   <summary><h5>Request:</h5></summary> 
- 
-##### Request
 
 L1
 
@@ -491,10 +485,8 @@ echo $response;
 ```
 </details>
 
-<details id="Respond"> 
-  <summary><h5>Respond:</h5></summary> 
- 
-##### Respond
+<details id="Return"> 
+  <summary><h5>Return:</h5></summary> 
 
 Returned parameters
 
@@ -547,7 +539,7 @@ L4
 | rate                | double | Rate applied to the value of the insured parcel.         |
 | max_coverage        | double | Maximum coverage amount that the insurance will provide. |
 
-Respond Sample:
+Return Sample:
 ```
 {
     "status_code": 200,
@@ -650,7 +642,6 @@ Get Courier Drop off point: This features enables users to check the available D
 <details id="Request"> 
   <summary><h5>Request:</h5></summary> 
  
-##### Request
 
 Parameters used:
 L1
@@ -698,10 +689,9 @@ echo $response;
 ```
 </details>
 
-<details id="Respond"> 
-  <summary><h5>Respond:</h5></summary> 
+<details id="Return"> 
+  <summary><h5>Return:</h5></summary> 
  
-##### Respond
 
 Returned parameters
 
@@ -726,7 +716,7 @@ L1
 | latitude            | double    | Latitude of the location of the drop off point  |
 | longitude           | double    | Longitude of the location of the drop off point |
 
-Respond Sample:
+Return Sample:
 ```
 {
     "status_code": 200,
@@ -767,7 +757,6 @@ Submit Shipment Orders: This features enables users to submit the shipment order
 <details id="Request"> 
   <summary><h5>Request:</h5></summary> 
  
-##### Request
 Parameters used:
 
 L1
@@ -971,10 +960,9 @@ echo $response;
 </details>
 
 
-<details id="Respond"> 
-  <summary><h5>Respond:</h5></summary> 
+<details id="Return"> 
+  <summary><h5>Return:</h5></summary> 
  
-##### Respond
 
 Returned parameters
 
@@ -1112,7 +1100,7 @@ L3
 | value                | double     | Value of the item                      |
 | quantity             | int        | Quantity of the item                   |
 
-Respond Sample:
+Return Sample:
 ```
 {
     "status_code": 200,
@@ -1346,8 +1334,6 @@ Get OnDemand Quotation: This feature enables users to obtain OnDemand Shipment q
 <details id="Request"> 
   <summary><h5>Request:</h5></summary> 
 
-
-##### Request 
 Parameter used:
 L1
 
@@ -1425,10 +1411,8 @@ echo $response;
 ```
 </details>
 
-<details id="Respond"> 
-  <summary><h5>Respond:</h5></summary> 
- 
-##### Respond
+<details id="Return"> 
+  <summary><h5>Return:</h5></summary> 
 
 Returned parameters
 
@@ -1457,7 +1441,7 @@ L2
 | ------------------- | ---------- | -------- | ------------------------------------ |
 | quotationId         | string(25) | Yes      | Unique ID of the Quotation displayed |
 
-Respond Sample:
+Return Sample:
 ```
 {
     "status_code": 200,
@@ -1635,7 +1619,6 @@ Submit OnDemand Orders: This features enables users to submit the OnDemand shipm
 <details id="Request"> 
   <summary><h5>Request:</h5></summary> 
  
-##### Request
 Parameter used:
 L1
 
@@ -1794,10 +1777,8 @@ echo $response;
 ```
 </details>
 
-<details id="Respond"> 
-  <summary><h5>Respond:</h5></summary> 
- 
-##### Respond
+<details id="Return"> 
+  <summary><h5>Return:</h5></summary> 
 
 Returned parameters
 
@@ -1818,7 +1799,7 @@ L2
 | selling_amount       | double | price of the delivery                       |
 | selling_currency     | string | currency used for the price of the currency |
 
-Respond Sample:
+Return Sample:
 ```
 {
     "status_code": 200,
@@ -2058,7 +2039,7 @@ API Return Status
 | TC                 | TURKS AND CAICOS ISLANDS               |
 </details>
 <details id="iso3166"> 
-  <summary><h4>ISO_3166</h4></summary> 
+  <summary><h4>ISO 3166</h4></summary> 
 
 At EasyParcel, we adhere to the ISO 3166 standard for the identification of states, provinces, and zones. For example, the code "MY-07" corresponds to the state of Penang in Malaysia.
 

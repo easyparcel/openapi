@@ -46,26 +46,26 @@ Ensure to use HTTPS to protect communication between clients and servers to prev
 #### Steps to get started.
 1.) Developers Hub to register an account [https://developer.easyparcel.com](https://developer.easyparcel.com/)
 
-==Login page.png==
+
 
 ![Login%20Page.png](pictures/Login%20Page.png)
 
 2.)Create new application
 
-==create new application.png==
+
 
 ![create new application.png](pictures/create%20new%20application.png)
 
 3.) Key in App name and the Redirect Urls
 
-==key in app name and redirect url.png==
+
 
 ![key in app name and redirect url.png](pictures/key%20in%20app%20name%20and%20redirect%20url.png)
 
 4.)Get the client id
 Get Client ID to pass to the Oauth URL
 
-==get client id.png==
+
 
 ![get client id.png](pictures/get%20client%20id.png)
 
@@ -91,19 +91,19 @@ Request:
 6.) Will be prompt to login (these below steps are to authorize linking the application to your easyparcel account)
 1. Login to your easyparcel account
    
-		==login.png==
+		
 
 		![Login%20Page.png](pictures/Login%20Page.png)
 
 3. Select an account desire to link
 4. 
-		==select account.png==
+		
 
                 ![select account.png](pictures/select%20account.png)
 
 5.  Allow access to Authorize link the account to with the application
    
-		==allow access.png==
+		
 
 		![allow access.png](pictures/allow%20access.png)
 

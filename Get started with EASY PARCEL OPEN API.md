@@ -107,9 +107,7 @@ Request:
 
 
 Respond param in redirect url Sample redirect url respond: 
-`https://your-callback-url/callback?code=`
-
-(code that requires to regenerate access token)
+`https://your-callback-url/callback?code=(code that requires to regenerate access token)`
 - code(pass in get access token url)
 - state (if got pass in auth url request)
 
@@ -122,10 +120,10 @@ Respond param in redirect url Sample redirect url respond:
 
 The Token Endpoint is used by the client to obtain an access token by presenting its authorization grant.
 
-**Endpoint URL**: `[https://developer.easyparcel.com/ep_auth/token](https://developer.easyparcel.com/ep_auth/token)`
+**Endpoint URL**: 
+[https://developer.easyparcel.com/ep_auth/token](https://developer.easyparcel.com/ep_auth/token)
 
 Pass the above params to get access token url or refresh access token url
-[https://developer.easyparcel.com/ep_auth/token](https://developer.easyparcel.com/ep_auth/token)
 
 Request:
 - grant_type = “authorization_code”

@@ -92,20 +92,19 @@ Request:
 1. Login to your easyparcel account
    
 		
+	![Login%20Page.png](pictures/Login%20Page.png)
 
-		![Login%20Page.png](pictures/Login%20Page.png)
-
-3. Select an account desire to link
-4. 
-		
-
-                ![select account.png](pictures/select%20account.png)
-
-5.  Allow access to Authorize link the account to with the application
+2. Select an account desire to link
    
 		
+   	![select account](pictures/select%20account.png)
 
-		![allow access.png](pictures/allow%20access.png)
+
+3.  Allow access to Authorize link the account to with the application
+   
+		
+	 ![allow access.png](pictures/allow%20access.png)
+
 
 Respond param in redirect url Sample redirect url respond: [https://your-callback-url/callback?code=](https://oauth.pstmn.io/v1/callback?code=f58b870d96b4f0ff24c63754d3d20a1c594216c9ebbcce9921bdf473263526d2) (code that requires to regenerate access token)
 - code(pass in get access token url)

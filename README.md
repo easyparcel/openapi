@@ -14,9 +14,9 @@ All API URLs start with the following base part:
 | Production  | https://connect.easyparcel.my/     |
 
 
-Demo URL is only for testing purposes.
+- Demo URL is only for testing purposes.
 
-Live URL is for real live transaction usage.
+- Live URL is for real live transaction usage.
 
 
 

@@ -12,7 +12,7 @@ The EasyParcel API allows your application to access current data within EasyPar
 | Production  | https://connect.easyparcel.my/     |
 
 #### Follow the guide below to integrate with easy parcel api.
-#### [Get started with EASY PARCEL OPEN API](Get-started-with-EASY-PARCEL-OPEN-API.md)
+#### [Get started with EASY PARCEL OPEN API](Get%20started%20with%20EASY%20PARCEL%20OPEN%20API.md)
 
 
 ##### API Functions/Features:

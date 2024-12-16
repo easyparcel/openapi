@@ -369,7 +369,7 @@ Respond Sample:
 Get Insurance Quotation: This features enables users to check the insurance quotations from specific courier companies on the EasyParcel platform. Users are required to fill in the necessary fields to access the insurance rate information.
 
 <details id="Request"> 
-  <summary><h4>Request:</h4></summary> 
+  <summary><h5>Request:</h5></summary> 
  
 ##### Request
 
@@ -475,7 +475,7 @@ echo $response;
 </details>
 
 <details id="Respond"> 
-  <summary><h4>Respond:</h4></summary> 
+  <summary><h5>Respond:</h5></summary> 
  
 ##### Respond
 

@@ -41,6 +41,11 @@ All API URLs start with the following base part:
 
 ---
 
+### Flow Chart
+![Flow%20Chart.png](pictures/Flow%20Chart.png)
+
+---
+
 **[References](#References)**
 
 ---

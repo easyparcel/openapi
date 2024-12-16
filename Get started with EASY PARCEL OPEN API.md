@@ -106,7 +106,10 @@ Request:
 	 ![allow access.png](pictures/allow%20access.png)
 
 
-Respond param in redirect url Sample redirect url respond: [https://your-callback-url/callback?code=](https://oauth.pstmn.io/v1/callback?code=f58b870d96b4f0ff24c63754d3d20a1c594216c9ebbcce9921bdf473263526d2) (code that requires to regenerate access token)
+Respond param in redirect url Sample redirect url respond: 
+`https://your-callback-url/callback?code=`
+
+(code that requires to regenerate access token)
 - code(pass in get access token url)
 - state (if got pass in auth url request)
 

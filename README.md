@@ -19,7 +19,8 @@ Live URL is for real live transaction usage.
 
 
 #### Follow the guide below to integrate with easy parcel api.
-#### [Get started with EASY PARCEL OPEN API](Get%20started%20with%20EASY%20PARCEL%20OPEN%20API.md)
+#### <u>[Get started with EASY PARCEL OPEN API](Get%20started%20with%20EASY%20PARCEL%20OPEN%20API.md)</u>
+
 
 
 ##### API Functions/Features:
@@ -36,9 +37,14 @@ Live URL is for real live transaction usage.
 
 **[Submit OnDemand Order](#Submit-OnDemand-Order)**
 
+---
 
- 
-#### Get Shipment Quotation:
+**[References](#References)**
+
+---
+<br>
+
+### Get Shipment Quotation:
 Get Shipment Quotation: This feature enables users to obtain shipment quotations from all courier companies available on the EasyParcel platform. Users need to provide sender and receiver addresses to check the shipment quotation.
 
 <details id="Request"> 
@@ -361,9 +367,10 @@ Respond Sample:
 ```
 </details>
 
+---
+<br>
 
- 
-#### Get Insurance Quotation:
+### Get Insurance Quotation:
 Get Insurance Quotation: This features enables users to check the insurance quotations from specific courier companies on the EasyParcel platform. Users are required to fill in the necessary fields to access the insurance rate information.
 
 <details id="Request"> 
@@ -622,7 +629,10 @@ Respond Sample:
 ```
 </details>
 
-#### Get Courier Dropoff point
+---
+<br>
+
+### Get Courier Dropoff point
 Get Courier Drop off point: This features enables users to check the available Drop off point for selected courier and zones. Users are required to fill in the necessary fields to access the insurance rate information.
 
 <details id="Request"> 
@@ -736,8 +746,10 @@ Respond Sample:
 ```
 </details>
 
+---
+<br>
 
-#### Submit Shipment Orders
+### Submit Shipment Orders
 Submit Shipment Orders: This features enables users to submit the shipment orders. Users are required to fill in the necessary fields to access the insurance rate information.
 
 <details id="Request"> 
@@ -790,6 +802,10 @@ L1
 | province_code             | string    | Yes      | Receiver's province (refer to [ISO- 3166](#iso3166))                        |
 | country_code              | string(2) | Yes      | Receiver's country code(refer to [country code](#country-code))             |
 | Notification              | array     | Yes      | Notifications of the parcel status (refer to [Notification](#Notification)) |
+
+
+---
+<br>
 
 ###### Airways Bills Branding
 
@@ -1309,8 +1325,10 @@ Respond Sample:
 ```
 </details>
 
+---
+<br>
 
-#### Get OnDemand Quotation
+### Get OnDemand Quotation
 Get OnDemand Quotation: This feature enables users to obtain OnDemand Shipment quotations from all courier companies available on the EasyParcel platform. Users need to provide sender and receiver addresses to check the shipment quotation.
 
 <details id="Request"> 
@@ -1596,8 +1614,10 @@ Respond Sample:
 ```
 </details>
 
+---
+<br>
 
-#### Submit OnDemand Order
+### Submit OnDemand Order
 Submit OnDemand Orders: This features enables users to submit the OnDemand shipment orders. Users are required to fill in the necessary fields to access the insurance rate information.
 
 <details id="Request"> 
@@ -1806,7 +1826,7 @@ Respond Sample:
 </details>
 
 
-#### References
+### References
 
 <details id="api-status"> 
   <summary><h4>API Return Status</h4></summary> 
@@ -1827,6 +1847,8 @@ API Return Status
 | 503         | Service Unavailable   | The server is currently unavailable (because it is overloaded or down for maintenance).                     |
 | 504         | Gateway Timeout       | The server was acting as a gateway or proxy and did not receive a timely response from the upstream server. |
 </details> 
+
+
 
 <details id="country-code"> 
   <summary><h4>Country Code</h4></summary> 

@@ -38,9 +38,14 @@ Live URL is for real live transaction usage.
 
 **[Submit OnDemand Order](#Submit-OnDemand-Order)**
 
+
+ 
 #### Get Shipment Quotation:
 Get Shipment Quotation: This feature enables users to obtain shipment quotations from all courier companies available on the EasyParcel platform. Users need to provide sender and receiver addresses to check the shipment quotation.
 
+<details id="Request"> 
+  <summary><h5>Request:</h5></summary> 
+ 
 ##### Request
 
 Parameters used:
@@ -97,7 +102,12 @@ curl_close($curl);
 echo $response;
 
 ```
+</details>
 
+
+<details id="Return"> 
+  <summary><h5>Return:</h5></summary>
+ 
 ##### Return
 
 Returned Parameters:
@@ -351,10 +361,16 @@ Respond Sample:
     ]
 }
 ```
+</details>
 
+
+ 
 #### Get Insurance Quotation:
 Get Insurance Quotation: This features enables users to check the insurance quotations from specific courier companies on the EasyParcel platform. Users are required to fill in the necessary fields to access the insurance rate information.
 
+<details id="Request"> 
+  <summary><h4>Request:</h4></summary> 
+ 
 ##### Request
 
 L1
@@ -456,7 +472,11 @@ curl_close($curl);
 echo $response;
 
 ```
+</details>
 
+<details id="Respond"> 
+  <summary><h4>Respond:</h4></summary> 
+ 
 ##### Respond
 
 Returned parameters
@@ -602,10 +622,14 @@ Respond Sample:
     ]
 }
 ```
+</details>
 
 #### Get Courier Dropoff point
 Get Courier Drop off point: This features enables users to check the available Drop off point for selected courier and zones. Users are required to fill in the necessary fields to access the insurance rate information.
 
+<details id="Request"> 
+  <summary><h5>Request:</h5></summary> 
+ 
 ##### Request
 
 Parameters used:
@@ -652,7 +676,11 @@ curl_close($curl);
 echo $response;
 
 ```
+</details>
 
+<details id="Respond"> 
+  <summary><h5>Respond:</h5></summary> 
+ 
 ##### Respond
 
 Returned parameters
@@ -708,12 +736,15 @@ Respond Sample:
 }
 
 ```
-
+</details>
 
 
 #### Submit Shipment Orders
 Submit Shipment Orders: This features enables users to submit the shipment orders. Users are required to fill in the necessary fields to access the insurance rate information.
 
+<details id="Request"> 
+  <summary><h5>Request:</h5></summary> 
+ 
 ##### Request
 Parameters used:
 
@@ -911,8 +942,12 @@ curl_close($curl);
 echo $response;
 
 ```
+</details>
 
 
+<details id="Respond"> 
+  <summary><h5>Respond:</h5></summary> 
+ 
 ##### Respond
 
 Returned parameters
@@ -1274,11 +1309,15 @@ Respond Sample:
     "last_key": ""
 }
 ```
-
+</details>
 
 
 #### Get OnDemand Quotation
 Get OnDemand Quotation: This feature enables users to obtain OnDemand Shipment quotations from all courier companies available on the EasyParcel platform. Users need to provide sender and receiver addresses to check the shipment quotation.
+
+<details id="Request"> 
+  <summary><h5>Request:</h5></summary> 
+
 
 ##### Request 
 Parameter used:
@@ -1356,7 +1395,11 @@ curl_close($curl);
 echo $response;
 
 ```
+</details>
 
+<details id="Respond"> 
+  <summary><h5>Respond:</h5></summary> 
+ 
 ##### Respond
 
 Returned parameters
@@ -1553,12 +1596,15 @@ Respond Sample:
     "last_key": ""
 }
 ```
-
+</details>
 
 
 #### Submit OnDemand Order
 Submit OnDemand Orders: This features enables users to submit the OnDemand shipment orders. Users are required to fill in the necessary fields to access the insurance rate information.
 
+<details id="Request"> 
+  <summary><h5>Request:</h5></summary> 
+ 
 ##### Request
 Parameter used:
 L1
@@ -1716,7 +1762,11 @@ echo $response;
 
 
 ```
+</details>
 
+<details id="Respond"> 
+  <summary><h5>Respond:</h5></summary> 
+ 
 ##### Respond
 
 Returned parameters
@@ -1755,7 +1805,7 @@ Respond Sample:
     }
 }
 ```
-
+</details>
 
 
 #### References

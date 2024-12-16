@@ -28,8 +28,8 @@ All API URLs start with the following base part:
 
 ---
 
-#### Follow the guide below to integrate with easy parcel api.
-#### <u>[Get started with EASY PARCEL OPEN API](Get%20started%20with%20EASY%20PARCEL%20OPEN%20API.md)</u>
+### Follow the guide below to integrate with easy parcel api.
+### [Get started with EASY PARCEL OPEN API](Get%20started%20with%20EASY%20PARCEL%20OPEN%20API.md)
 
 
 ---

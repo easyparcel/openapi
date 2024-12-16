@@ -46,7 +46,7 @@ Ensure to use HTTPS to protect communication between clients and servers to prev
 #### Steps to get started.
 1.) Developers Hub to register an account [https://developer.easyparcel.com](https://developer.easyparcel.com/)
 ==Login page.png==
-![[Login%20Page.png]]
+![[Login%20Page.png](Login%20Page.png)
 
 2.)Create new application
 ==create new application.png==

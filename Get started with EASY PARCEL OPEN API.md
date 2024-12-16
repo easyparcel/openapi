@@ -51,16 +51,24 @@ Ensure to use HTTPS to protect communication between clients and servers to prev
 ![Login%20Page.png](pictures/Login%20Page.png)
 
 2.)Create new application
+
 ==create new application.png==
+
 ![create new application.png](pictures/create%20new%20application.png)
 
 3.) Key in App name and the Redirect Urls
+
 ==key in app name and redirect url.png==
-![[key in app name and redirect url.png]]
+
+![key in app name and redirect url.png](pictures/key%20in%20app%20name%20and%20redirect%20url.png)
+
 4.)Get the client id
 Get Client ID to pass to the Oauth URL
+
 ==get client id.png==
-![[get client id.png]]
+
+![get client id.png](pictures/get%20client%20id.png)
+
 ### Authorization Endpoint
 The Authorization Endpoint is used by the client to obtain authorization from the resource owner via user-agent redirection.
 #### Endpoint URL: 

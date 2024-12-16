@@ -773,7 +773,7 @@ Request L1
 | Origin               | array       | Yes      | Origin of the parcel (refer to [origin](#Origin))                           |
 | Destination          | array       | Yes      | Destination of the parcel to sent to (refer to [destination](#destination)) |
 | awb_branding         | array       | Yes      | Airway bill branding(refer to [awb_branding](#awb_branding))                |
-
+Request L2
 ###### Origin
 
 | Requested Parameters      | Type      | Required | Description                                        |
@@ -814,7 +814,7 @@ Request L1
 | enable               | boolean | Yes      | To enable or disable Airways Bills Branding |
 
 
-Request L2
+Request L3
 ###### Items
 
 | Requested Parameters | Type        | Required | Description                                                                      |
@@ -826,13 +826,15 @@ Request L2
 | Insurance_purchase   | array       | Yes      | Purchased Insurance details (refer to [insurance purchase](#Insurance-purchase)) |
 
 Request L3
+
 ###### Notification
 
-| Requested Parameters | Type    | Required | Description                                              |
-| -------------------- | ------- | -------- | -------------------------------------------------------- |
-| sms                  | boolean | Yes      | To enable or disable sms notification of the parcel      |
-| email                | boolean | Yes      | To enable or disable email notification of the parcel    |
-| whatsapp             | boolean | Yes      | To enable or disable whatsapp notification of the parcel |
+| Requested Parameters | Type  | Required | Description                                                                             |
+| -------------------- | ----- | -------- | --------------------------------------------------------------------------------------- |
+| sms                  | array | Yes      | status of enabling sms notification of the parcel (refer to [sms](#sms))                |
+| email                | array | Yes      | status of enabling email notification of the parcel (refer to [email](#email))          |
+| whatsapp             | array | Yes      | status of enabling whatsapp notification of the parcel (refer to [whatsapp](#whatsapp)) |
+
 
 
 ###### Insurance purchase
@@ -841,6 +843,26 @@ Request L3
 | insurance_service_id | string | Yes      | insurance service number |
 | invoices             | string | Yes      | links to the invoices    |
 | photos               | string | Yes      | Image location           |
+
+Request L4
+
+##### sms
+| Requested Parameters | Type    | Required | Description                                         |
+| -------------------- | ------- | -------- | --------------------------------------------------- |
+| enable               | boolean | Yes      | To enable or disable sms notification of the parcel |
+
+##### email
+
+| Requested Parameters | Type    | Required | Description                                           |
+| -------------------- | ------- | -------- | ----------------------------------------------------- |
+| enable               | boolean | Yes      | To enable or disable email notification of the parcel |
+
+##### whatsapp
+
+| Requested Parameters | Type    | Required | Description                                              |
+| -------------------- | ------- | -------- | -------------------------------------------------------- |
+| enable               | boolean | Yes      | To enable or disable whatsapp notification of the parcel |
+
 
 
 

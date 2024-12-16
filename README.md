@@ -1,4 +1,6 @@
-# Easy Parcel API
+# Easy Parcel API  <img src="pictures/EasyParcel-TransparentSquare-md.png" alt="Logo" style="width:70px; margin:0; padding:0;">
+
+
  
 The EasyParcel API allows your application to access current data within EasyParcel. However, EasyParcel API is using RESTful with PHP concept to develop API for web based applications. Through the API, several common operations can be performed on EasyParcel objects.
 

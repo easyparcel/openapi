@@ -48,11 +48,12 @@ Ensure to use HTTPS to protect communication between clients and servers to prev
 
 ==Login page.png==
 
-![Login%20Page.png](Login%20Page.png)
+![Login%20Page.png](pictures/Login%20Page.png)
 
 2.)Create new application
 ==create new application.png==
-![[create new application.png]]
+![create new application.png](pictures/create%20new%20application.png)
+
 3.) Key in App name and the Redirect Urls
 ==key in app name and redirect url.png==
 ![[key in app name and redirect url.png]]

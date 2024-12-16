@@ -1,6 +1,6 @@
 ## Get started with EASY PARCEL OPEN API
 
-### [Back to official documentation](README.md)
+### [Back to official documentation](Easy%20Parcel%20API%20Documentation.md)
 
 ### How to get start with EasyParcel API.
 1.) Register Developers Hub

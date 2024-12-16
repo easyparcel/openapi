@@ -63,7 +63,7 @@ Get Shipment Quotation: This feature enables users to obtain shipment quotations
   <summary><h5>Request:</h5></summary> 
 
 Parameters used:
-L1
+Request L1
 
 | Requested Parameters | Type        | Required | Description                                                 |
 | -------------------- | ----------- | -------- | ----------------------------------------------------------- |
@@ -123,7 +123,7 @@ echo $response;
   <summary><h5>Return:</h5></summary>
 
 Returned Parameters:
-L1
+Return L1
 
 | Returned Parameters | Type       | Description                                                         |
 | ------------------- | ---------- | ------------------------------------------------------------------- |
@@ -138,7 +138,7 @@ L1
 | uuid                | string     | UUID of the Quotation                                               |
 | quotations          | array      | Quotations / Service available (refer to [quotations](#quotations)) |
 
-L2
+Return L2
 ###### quotations
 
 | Returned Parameters        | Type    | Description                                                  |
@@ -384,7 +384,7 @@ Get Insurance Quotation: This features enables users to check the insurance quot
 <details id="Request"> 
   <summary><h5>Request:</h5></summary> 
 
-L1
+Request L1
 
 | Requested Parameters | Type        | Required | Description                                                      |
 | -------------------- | ----------- | -------- | ---------------------------------------------------------------- |
@@ -401,7 +401,7 @@ L1
 | deli_postcode        | string(10)  | Yes      | Receiver's post code                                             |
 | deli_province_code   | string(35)  | Yes      | Receiver's province code                                         |
 | deli_country_code    | string(2)   | Yes      | Receiver's country code (refer to [country code](#country-code)) |
-L2
+Request L2
 ###### Items
 
 | Requested Parameters | Type     | Required | Description          |
@@ -490,7 +490,7 @@ echo $response;
 
 Returned parameters
 
-L1
+Return L1
 
 | Returned Parameters  | Type       | Description                                                      |
 | -------------------- | ---------- | ---------------------------------------------------------------- |
@@ -507,7 +507,7 @@ L1
 | deli_country_code    | string     | Receiver's country code (refer to [country code](#country-code)) |
 | insurance_quotations | array      | (refer to [insurance_quotations](#insurance_quotations))         |
 
-L2
+Return L2
 ###### insurance_quotations
 
 | Returned Parameters | Type   | Description                                                               |
@@ -644,7 +644,7 @@ Get Courier Drop off point: This features enables users to check the available D
  
 
 Parameters used:
-L1
+Request L1
 
 | Requested Parameters | Type       | Required | Description                                                           |
 | -------------------- | ---------- | -------- | --------------------------------------------------------------------- |
@@ -695,7 +695,7 @@ echo $response;
 
 Returned parameters
 
-L1
+Request L1
 
 | Returned Parameters | Type      | Description                                     |
 | ------------------- | --------- | ----------------------------------------------- |
@@ -759,17 +759,20 @@ Submit Shipment Orders: This features enables users to submit the shipment order
  
 Parameters used:
 
-L1
+Request L1
 
-| Requested Parameters | Type        | Required | Description                                  |
-| -------------------- | ----------- | -------- | -------------------------------------------- |
-| service_id           | string(10)  | Yes      | Service Identification number                |
-| collection_date      | date        | Yes      | Date to collect the parcel                   |
-| weight               | double(8,2) | Yes      | Weight of the parcel                         |
-| height               | double(8,2) | Yes      | Height of the parcel                         |
-| length               | double(8,2) | Yes      | Length of the parcel                         |
-| width                | double(8,2) | Yes      | Width of the parcel                          |
-| item                 | array       | Yes      | Item of the parcel (refer to [item](#items)) |
+| Requested Parameters | Type        | Required | Description                                                                 |
+| -------------------- | ----------- | -------- | --------------------------------------------------------------------------- |
+| service_id           | string(10)  | Yes      | Service Identification number                                               |
+| collection_date      | date        | Yes      | Date to collect the parcel                                                  |
+| weight               | double(8,2) | Yes      | Weight of the parcel                                                        |
+| height               | double(8,2) | Yes      | Height of the parcel                                                        |
+| length               | double(8,2) | Yes      | Length of the parcel                                                        |
+| width                | double(8,2) | Yes      | Width of the parcel                                                         |
+| item                 | array       | Yes      | Item of the parcel (refer to [item](#items))                                |
+| Origin               | array       | Yes      | Origin of the parcel (refer to [origin](#Origin))                           |
+| Destination          | array       | Yes      | Destination of the parcel to sent to (refer to [destination](#destination)) |
+| awb_branding         | array       | Yes      | Airway bill branding(refer to [awb_branding](#awb_branding))                |
 
 ###### Origin
 
@@ -804,18 +807,14 @@ L1
 | country_code              | string(2) | Yes      | Receiver's country code(refer to [country code](#country-code))             |
 | Notification              | array     | Yes      | Notifications of the parcel status (refer to [Notification](#Notification)) |
 
-
----
-<br>
-
-###### Airways Bills Branding
+###### awb_branding
 
 | Requested Parameters | Type    | Required | Description                                 |
 | -------------------- | ------- | -------- | ------------------------------------------- |
 | enable               | boolean | Yes      | To enable or disable Airways Bills Branding |
 
 
-L2
+Request L2
 ###### Items
 
 | Requested Parameters | Type        | Required | Description                                                                      |
@@ -826,6 +825,7 @@ L2
 | quantity             | int         | Yes      | The parcel quantity                                                              |
 | Insurance_purchase   | array       | Yes      | Purchased Insurance details (refer to [insurance purchase](#Insurance-purchase)) |
 
+Request L3
 ###### Notification
 
 | Requested Parameters | Type    | Required | Description                                              |
@@ -835,8 +835,6 @@ L2
 | whatsapp             | boolean | Yes      | To enable or disable whatsapp notification of the parcel |
 
 
-
-L3
 ###### Insurance purchase
 | Requested Parameters | Type   | Required | Description              |
 | -------------------- | ------ | -------- | ------------------------ |
@@ -844,7 +842,9 @@ L3
 | invoices             | string | Yes      | links to the invoices    |
 | photos               | string | Yes      | Image location           |
 
-Sample code:
+
+
+Request Sample:
 ```
 <?php
 
@@ -946,7 +946,7 @@ curl_setopt_array($curl, array(
   ]
 }',
   CURLOPT_HTTPHEADER => array(
-    'Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhcHAiOnsiY2xpZW50X2lkIjoiNjU3MzEyOTYtMzkzZi00MmJjLTllNTktY2E5NjcyYmViNmY2In0sInVzZXIiOnsiaWQiOiI0ZTAyMTA1YzQ2NmNmYzg4Y2U4MmQ2NTEwMGI0YzBhZEptbnJDT1hSNmV6UHRtSFUyWkNyYmc9PSIsImVhc3lfYWNjb3VudF9pZCI6IjA5ZjcxMjc5LTBjMGItNDcxOS05OTM5LWMwMzVjYWVlYzYxOSIsImFjY291bnRfaWQiOiI4NzIwNjYwIn0sImlhdCI6MTczMTg5OTM0MCwiaXNzIjoiZWFzeXBhcmNlbCIsImF1ZCI6ImVhc3lwYXJjZWwiLCJleHAiOjE3MzE5MzUzNDB9.S2yUdWfzIPZETtQhvc9dRmtVq8Wz_HBNDU5N-VJFblU',
+    'Authorization: Bearer sample,
     'Content-Type: application/json'
   ),
 ));
@@ -964,9 +964,9 @@ echo $response;
   <summary><h5>Return:</h5></summary> 
  
 
-Returned parameters
+Returned parameters:
 
-L1
+Returned L1
 
 | Returned Parameters        | Type       | Description                                                                                                    |
 | -------------------------- | ---------- | -------------------------------------------------------------------------------------------------------------- |
@@ -1335,14 +1335,17 @@ Get OnDemand Quotation: This feature enables users to obtain OnDemand Shipment q
   <summary><h5>Request:</h5></summary> 
 
 Parameter used:
-L1
+
+Request L1
 
 | Requested Parameters | Type   | Required | Description                            |
 | -------------------- | ------ | -------- | -------------------------------------- |
 | schedule_pickup_date | date   | Yes      | Date to pickup the parcel              |
 | schedule_pickup_time | time   | Yes      | Time to pickup the parcel              |
 | timezone             | string | Yes      | TimeZone of the location of the parcel |
-L2
+
+Request L2
+
 ###### waypoint_list
 
 | Requested Parameters | Type   | Required | Description                                                      |
@@ -1351,7 +1354,7 @@ L2
 | address              | string | yes      | Address of the parcel                                            |
 | type                 | string | yes      | pickup type                                                      |
 
-L3
+Request L3
 ###### coordinates
 
 | Requested Parameters | Type   | Required | Description             |
@@ -1416,7 +1419,7 @@ echo $response;
 
 Returned parameters
 
-L1
+Return L1
 
 | Returned Parameters  | Type       | Description                      |
 | -------------------- | ---------- | -------------------------------- |
@@ -1434,7 +1437,9 @@ L1
 | estimate_total       | double     | price of the delivery            |
 | currency             | string     | currency used for the price      |
 | metadata             | array      | (refer to [metadata](#metadata)) |
-L2
+
+Return L2
+
 ###### metadata
 
 | Returned Parameters | Type       | Required | Description                          |
@@ -1620,7 +1625,7 @@ Submit OnDemand Orders: This features enables users to submit the OnDemand shipm
   <summary><h5>Request:</h5></summary> 
  
 Parameter used:
-L1
+Request L1
 
 | Requested Parameters | Type      | Required | Description                                                                                                                                         |
 | -------------------- | --------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1632,7 +1637,7 @@ L1
 | timezone             | string    | Yes      | Timezone of the parcel located at                                                                                                                   |
 | metadata             | array     | Yes      | refer to [metadata](#metadata)                                                                                                                      |
 
-L2 
+Request L2 
 ###### Waypoint list
 
 | Requested Parameters      | Type       | Required | Description                                                                |
@@ -1782,7 +1787,7 @@ echo $response;
 
 Returned parameters
 
-L1
+Return L1
 
 | Returned Parameters | Type   | Description                                                              |
 | ------------------- | ------ | ------------------------------------------------------------------------ |
@@ -1792,7 +1797,7 @@ L1
 | tracking_url        | string | url that link customer to the tracking page to check the delivery status |
 | ondemand_payment    | array  | (refer to [ondemand_payment](#ondemand_payment))                         |
 
-L2
+Return L2
 ###### ondemand_payment
 | Requested Parameters | Type   | Description                                 |
 | -------------------- | ------ | ------------------------------------------- |

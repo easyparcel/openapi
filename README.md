@@ -4,6 +4,14 @@
  
 The EasyParcel API allows your application to access current data within EasyParcel. However, EasyParcel API is using RESTful with PHP concept to develop API for web based applications. Through the API, several common operations can be performed on EasyParcel objects.
 
+---
+
+### Flow Chart
+<img src="pictures/Flow%20Chart.png" alt="Flow Chart" style="width:40%; margin:0; padding:0;">
+
+---
+
+
 **Links to our API**
 
 All API URLs start with the following base part:
@@ -18,14 +26,15 @@ All API URLs start with the following base part:
 
 - Live URL is for real live transaction usage.
 
-
+---
 
 #### Follow the guide below to integrate with easy parcel api.
 #### <u>[Get started with EASY PARCEL OPEN API](Get%20started%20with%20EASY%20PARCEL%20OPEN%20API.md)</u>
 
 
+---
 
-##### API Functions/Features:
+#### API Functions/Features:
 
 **[Get Shipment Quotation](#Get-Shipment-Quotation)**
 
@@ -38,11 +47,6 @@ All API URLs start with the following base part:
 **[Get OnDemand Quotation](#Get-OnDemand-Quotation)**
 
 **[Submit OnDemand Order](#Submit-OnDemand-Order)**
-
----
-
-### Flow Chart
-![Flow%20Chart.png](pictures/Flow%20Chart.png)
 
 ---
 

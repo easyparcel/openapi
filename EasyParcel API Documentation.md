@@ -63,6 +63,7 @@ Get Shipment Quotation: This feature enables users to obtain shipment quotations
   <summary><h5>Request:</h5></summary> 
 
 Parameters used:
+
 Request L1
 
 | Requested Parameters | Type        | Required | Description                                                 |
@@ -123,6 +124,7 @@ echo $response;
   <summary><h5>Return:</h5></summary>
 
 Returned Parameters:
+
 Return L1
 
 | Returned Parameters | Type       | Description                                                         |
@@ -401,7 +403,9 @@ Request L1
 | deli_postcode        | string(10)  | Yes      | Receiver's post code                                             |
 | deli_province_code   | string(35)  | Yes      | Receiver's province code                                         |
 | deli_country_code    | string(2)   | Yes      | Receiver's country code (refer to [country code](#country-code)) |
+
 Request L2
+
 ###### Items
 
 | Requested Parameters | Type     | Required | Description          |
@@ -517,6 +521,7 @@ Return L2
 | insurance_list      | array  | List of available insurances (refer to [insurance_list](#insurance_list)) |
 
 Return L3
+
 ###### insurance_list
 
 | Returned Parameters   | Type   | Description                                    |
@@ -530,6 +535,7 @@ Return L3
 | price                 | double | Rrice of the insurance coverage                |
 
 Return L4
+
 ###### rate
 
 | Returned Parameters | Type   | Description                                              |
@@ -644,6 +650,7 @@ Get Courier Drop off point: This features enables users to check the available D
  
 
 Parameters used:
+
 Request L1
 
 | Requested Parameters | Type       | Required | Description                                                           |
@@ -773,7 +780,9 @@ Request L1
 | Origin               | array       | Yes      | Origin of the parcel (refer to [origin](#Origin))                           |
 | Destination          | array       | Yes      | Destination of the parcel to sent to (refer to [destination](#destination)) |
 | awb_branding         | array       | Yes      | Airway bill branding(refer to [awb_branding](#awb_branding))                |
+
 Request L2
+
 ###### Origin
 
 | Requested Parameters      | Type      | Required | Description                                        |
@@ -1005,7 +1014,7 @@ Returned L1
 | shipment_tracking_sms      | array      | Shipment notification details on sms                                                                           |
 | shipment_tracking_email    | array      | Shipment notification details on email                                                                         |
 
-L2
+Return L2
 
 ###### shipments
 
@@ -1377,6 +1386,7 @@ Request L2
 | type                 | string | yes      | pickup type                                                      |
 
 Request L3
+
 ###### coordinates
 
 | Requested Parameters | Type   | Required | Description             |
@@ -1661,6 +1671,7 @@ Request L1
 | metadata             | array     | Yes      | refer to [metadata](#metadata)                                                                                                                      |
 
 Request L2 
+
 ###### Waypoint list
 
 | Requested Parameters      | Type       | Required | Description                                                                |
@@ -1682,7 +1693,7 @@ Request L2
 | -------------------- | ---------- | -------- | ---------------------------------- |
 | quotationId          | string(35) | Yes      | Unique Id of the request quotation |
 
-L3
+Request L3
 ###### Coordinates
 
 | Requested Parameters | Type   | Required | Description                      |
@@ -1698,7 +1709,7 @@ L3
 | description          | string | Yes      | Parcel / content description                               |
 | Dimension            | array  | Yes      | Dimension of the parcel (refer to [Dimension](#Dimension)) |
 
-L4 
+Request L4 
 ###### Dimension
 
 | Requested Parameters | Type         | Required | Description          |

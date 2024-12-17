@@ -114,74 +114,50 @@ Request L4
 
 
 
-Request Sample:
+Request Sample Code:
 ```
-<?php
-
-$curl = curl_init();
-
-curl_setopt_array($curl, array(
-  CURLOPT_URL => 'https://developer.easyparcel.com/open_api/shipment/submit_orders',
-  CURLOPT_RETURNTRANSFER => true,
-  CURLOPT_ENCODING => '',
-  CURLOPT_MAXREDIRS => 10,
-  CURLOPT_TIMEOUT => 0,
-  CURLOPT_FOLLOWLOCATION => true,
-  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-  CURLOPT_CUSTOMREQUEST => 'POST',
-  CURLOPT_POSTFIELDS =>'{
+{
   "list": [
     {
-      "service_id": "EP-CS0IW",
-      "collection_date": "2024-10-22",
-       "weight": 0.5,
-        "height": 10,
-        "length": 10,
-        "width": 10,
+      "service_id": "EP-CS0R",
+      "collection_date": "2024-10-02",
+       "weight": 2.5,
+        "height": 30,
+        "length": 40,
+        "width": 20,
       "item": [
         {
           "content": "Electronics",
           "weight": 0.5,
-          "height": 100,
-          "length": 100,
-          "width": 100,
+          "height": 30,
+          "length": 40,
+          "width": 20,
           "currency_code": "MYR",
-          "value": 200,
-          "quantity": 1,
-          "insurance_purchase":{
-                "insurance_service_id":23,
-                "invoices": "https://ep-website-media.s3.ap-southeast-1.amazonaws.com/my/wp-content/uploads/2024/02/sf-express-exd.webp",
-                "photos": "https://s3-ap-southeast-1.amazonaws.com/easyparcel/Public/source/general/img/couriers/DHLeC.jpg"
-            }
+          "value": 500,
+          "quantity": 1
         },
         {
           "content": "Electronics 2",
-          "weight": 0.7,
-          "height": 120,
-          "length": 100,
-          "width": 100,
+          "weight": 0.5,
+          "height": 10,
+          "length": 20,
+          "width": 20,
           "currency_code": "MYR",
-          "value": 500,
-          "quantity": 1,
-          "insurance_purchase":{
-                "insurance_service_id":23,
-                "invoices": "https://ep-website-media.s3.ap-southeast-1.amazonaws.com/my/wp-content/uploads/2024/02/sf-express-exd.webp"
-            }
+          "value": 50,
+          "quantity": 2
         }
-
       ],
-      
       "origin": {
         "name": "John Doe",
         "company": "ABC Corp",
         "phone_number_country_code": "+60",
         "phone_number": "1163642281",
-        "email": "sample@easyparcel.com",
+        "email": "weikeong.liew@easyparcel.com",
         "address_1": "123 Main St",
         "address_2": "Apt 4B",
-        "postcode": "11900",
+        "postcode": "09600",
         "town": "Lunas",
-        "province_code": "MY-07",
+        "province_code": "MY-02",
         "country_code": "MY"
       },
       "destination": {
@@ -189,12 +165,74 @@ curl_setopt_array($curl, array(
         "company": "XYZ Inc",
         "phone_number_country_code": "+60",
         "phone_number": "1163642281",
-        "email": "sample@easyparcel.com",
+        "email": "weikeong.liew@easyparcel.com",
         "address_1": "456 High St",
         "address_2": "Floor 2",
-        "postcode": "11900",
+        "postcode": "11950",
         "town": "Bayan Lepas",
         "province_code": "MY-07",
+        "country_code": "MY",
+        "notification": {
+          "sms": {
+            "enable": true
+          },
+          "email": {
+            "enable": true
+          },
+          "whatsapp": {
+            "enable": false
+          }
+        }
+      },
+      "awb_branding": {
+        "enable": true
+      }
+   
+    },
+
+    {
+      "service_id": "EP-CS0R",
+      "collection_date": "2024-10-03",
+       "weight": 0.5,
+        "height": 30,
+        "length": 40,
+        "width": 20,
+      "item": [
+        {
+          "content": "test",
+          "weight": 0.5,
+          "height": 30,
+          "length": 40,
+          "width": 20,
+          "currency_code": "MYR",
+          "value": 200,
+          "quantity": 1
+        }
+      ],
+      "origin": {
+        "name": "JWK 1",
+        "company": "ABC Corp",
+        "phone_number_country_code": "+60",
+        "phone_number": "1163642281",
+        "email": "weikeong.liew@easyparcel.com",
+        "address_1": "123 Main St",
+        "address_2": "Apt 4B",
+        "postcode": "11950",
+        "town": "Bayan Baru",
+        "province_code": "MY-07",
+        "country_code": "MY"
+      },
+      "destination": {
+        "name": "WK 2",
+        "company": "XYZ Inc",
+        "phone_number_country_code": "+60",
+        "phone_number": "1163642281",
+        "email": "weikeong.liew@easyparcel.com",
+        "address_1": "456 High St",
+        "address_2": "Floor 2",
+        "postcode": "09600",
+        "town": "Lunas",
+        "province_code": "MY-02",
         "country_code": "MY",
         "notification": {
           "sms": {
@@ -211,21 +249,10 @@ curl_setopt_array($curl, array(
       "awb_branding": {
         "enable": true
       }
-   
+      
     }
   ]
-}',
-  CURLOPT_HTTPHEADER => array(
-    'Authorization: Bearer sample,
-    'Content-Type: application/json'
-  ),
-));
-
-$response = curl_exec($curl);
-
-curl_close($curl);
-echo $response;
-
+}
 ```
 
 ---

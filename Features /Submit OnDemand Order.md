@@ -68,22 +68,8 @@ L4
 
 
 
-Sample code:
+Request Sample code:
 ```
-<?php
-
-$curl = curl_init();
-
-curl_setopt_array($curl, array(
-  CURLOPT_URL => 'http://localhost:8023/open_api/ondemand/order',
-  CURLOPT_RETURNTRANSFER => true,
-  CURLOPT_ENCODING => '',
-  CURLOPT_MAXREDIRS => 10,
-  CURLOPT_TIMEOUT => 0,
-  CURLOPT_FOLLOWLOCATION => true,
-  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-  CURLOPT_CUSTOMREQUEST => 'POST',
-  CURLOPT_POSTFIELDS =>'
 {
     "from_country": "MY",
     "ondemand_service_id": 3,
@@ -148,18 +134,7 @@ curl_setopt_array($curl, array(
     "metadata": {
         "quotationId": "3114850556997669249"
     }
-}',
-  CURLOPT_HTTPHEADER => array(
-    'Content-Type: application/json'
-  ),
-));
-
-$response = curl_exec($curl);
-
-curl_close($curl);
-echo $response;
-
-
+}
 ```
 
 ---
@@ -170,13 +145,13 @@ L1
 
 | Returned Parameters | Type   | Description                                                              |
 | ------------------- | ------ | ------------------------------------------------------------------------ |
-| app_uuid            | string |                                                                          |
+| app_uuid            | string | A unique ID for your app, created to make sure each app has a distinct identifier. |
 | ondemand_service_id | string | ID for on-demand delivery service.                                       |
 | order_number        | string | unique number assigned to the order                                      |
 | tracking_url        | string | url that link customer to the tracking page to check the delivery status |
 | ondemand_payment    | array  | (refer to [ondemand_payment](#ondemand_payment))                         |
 
-Return L2
+L2
 ###### ondemand_payment
 | Requested Parameters | Type   | Description                                 |
 | -------------------- | ------ | ------------------------------------------- |

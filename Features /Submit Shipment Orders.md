@@ -282,9 +282,9 @@ L2
 | sender_address1                              | string     | Sender's Address 1                                                  |
 | sender_address2                              | string     | Sender's Address 2                                                  |
 | sender_city                                  | string     | Sender's city                                                       |
-| sender_province_code                         | string     | Sender's province (refer to [ISO_3166](#iso3166))                   |
+| sender_province_code                         | string     | Sender's province (refer to [ISO 3166](../References/ISO%203166.md)))                   |
 | sender_postcode                              | string     | Sender's post code                                                  |
-| sender_country_code                          | string     | Sender's country code (refer to [country code](#country-code))      |
+| sender_country_code                          | string     | Sender's country code (refer to [Country Code](../References/Country%20Code.md)))      |
 | receiver_point_code                          | string     |                                                                     |
 | receiver_name                                | string     | Name of the receiver                                                |
 | receiver_phone_number_country_code           | string     | The country code of the phone of the receiver                       |

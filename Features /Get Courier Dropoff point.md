@@ -48,7 +48,8 @@ curl_close($curl);
 echo $response;
 
 ```
- 
+
+ --- 
 
 #### Returned parameters
 

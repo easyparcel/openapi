@@ -1,4 +1,4 @@
-## Steps to setup demo account
+## Steps to setup demo account  | [Top up demo account](#Top-up-demo-account)
 1.) Login to developer https://developer.easyparcel.com
 ![Login%20Page.png](pictures/Login%20Page.png)
 

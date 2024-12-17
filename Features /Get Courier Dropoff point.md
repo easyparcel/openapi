@@ -10,7 +10,7 @@ L1
 | Requested Parameters | Type       | Required | Description                                                           |
 | -------------------- | ---------- | -------- | --------------------------------------------------------------------- |
 | courier_id           | string(25) | Yes      | Courier identification number                                         |
-| country_code         | string(2)  | Yes      | Dropoff point's country code (refer to [country code](./References/Country%20Code.md)) |
+| country_code         | string(2)  | Yes      | Dropoff point's country code (refer to [country code](../References/Country%20Code.md)) |
 | postcode             | string(10) | Yes      | Dropoff point's postcode                                              |
 | city                 | string(35) | Yes      | Dropoff point's city                                                  |
 | state_code           | string(35) | Yes      | Dropoff point's state_code                                            |

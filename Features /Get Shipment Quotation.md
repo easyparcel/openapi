@@ -1,13 +1,11 @@
 ### Get Shipment Quotation:
 Get Shipment Quotation: This feature enables users to obtain shipment quotations from all courier companies available on the EasyParcel platform. Users need to provide sender and receiver addresses to check the shipment quotation.
 
-### [Request](#Request)  |  [Return](#Return) 
+### [Request](#Requested-Parameters)  |  [Return](#Returned-Parameters) 
 
-#### Request:
+#### Requested Parameters:
 
-Parameters used:
-
-Request L1
+L1
 
 | Requested Parameters | Type        | Required | Description                                                 |
 | -------------------- | ----------- | -------- | ----------------------------------------------------------- |
@@ -60,7 +58,6 @@ curl_close($curl);
 echo $response;
 
 ```
-#### Return:
 
 #### Returned Parameters:
 
@@ -215,25 +212,6 @@ Return Sample:
                     "cod_charges_conditions": ""
                 },
                 {
-                    "service_id": "EP-CS0IO",
-                    "service_id2": 133,
-                    "service_name": "J&T Express (Drop-Off)",
-                    "courier_id": "EP-CR0AL",
-                    "courier_name": "J&T Express (Malaysia) Sdn. Bhd.",
-                    "courier_uuid": "09e87a98-4eef-4d11-8eff-d8d9c656f993",
-                    "courier_image_fullpath": "https://s3-ap-southeast-1.amazonaws.com/easyparcel-static/Public/source/general/img/couriers/J&T_Express.jpg",
-                    "courier_logo_fullpath": "https://s3-ap-southeast-1.amazonaws.com/easyparcel-static/Public/source/general/img/couriers/",
-                    "delivery_duration": null,
-                    "price": "2.05",
-                    "price_currency": "SGD",
-                    "exchange_rate": "0.3023089000",
-                    "exchange_rate_id": 94376,
-                    "cod_service_available": false,
-                    "cod_service_min_cod_amount": "",
-                    "cod_service_max_cod_amount": "",
-                    "cod_charges_conditions": ""
-                },
-                {
                     "service_id": "EP-CS0IH",
                     "service_id2": 134,
                     "service_name": "Flash Express (Pick Up)",
@@ -290,25 +268,7 @@ Return Sample:
                     "cod_service_max_cod_amount": "",
                     "cod_charges_conditions": ""
                 },
-                {
-                    "service_id": "EP-CS0IT",
-                    "service_id2": 138,
-                    "service_name": "Best Express (Pick Up)",
-                    "courier_id": "EP-CR0DF",
-                    "courier_name": "Best Global Logistics Technology (Malaysia) Sdn. Bhd.",
-                    "courier_uuid": "5e4ddd66-80f0-4a8c-a40c-6c029a015d86",
-                    "courier_image_fullpath": "https://s3-ap-southeast-1.amazonaws.com/easyparcel-static/Public/source/general/img/couriers/Best_Express.jpg",
-                    "courier_logo_fullpath": "https://s3-ap-southeast-1.amazonaws.com/easyparcel-static/Public/source/general/img/couriers/",
-                    "delivery_duration": null,
-                    "price": "2.26",
-                    "price_currency": "SGD",
-                    "exchange_rate": "0.3023089000",
-                    "exchange_rate_id": 94376,
-                    "cod_service_available": false,
-                    "cod_service_min_cod_amount": "",
-                    "cod_service_max_cod_amount": "",
-                    "cod_charges_conditions": ""
-                }
+
             ]
         }
     ]

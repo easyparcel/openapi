@@ -5,8 +5,6 @@ Get Courier Drop off point: This features enables users to check the available D
 
 #### Requested Parameters
 
-L1
-
 | Requested Parameters | Type       | Required | Description                                                           |
 | -------------------- | ---------- | -------- | --------------------------------------------------------------------- |
 | courier_id           | string(25) | Yes      | Courier identification number                                         |
@@ -30,8 +28,6 @@ Sample Code:
  --- 
 
 #### Returned parameters
-
-L1
 
 | Returned Parameters | Type      | Description                                     |
 | ------------------- | --------- | ----------------------------------------------- |

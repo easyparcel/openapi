@@ -12,7 +12,7 @@ The EasyParcel API allows your application to access current data within EasyPar
 
 ---
 ### Oauth Authentication
-#### [Oauth Authentication](Oauth%20Authentication.md)
+#### [Oauth Authentication](Oauth/Oauth%20Authentication.md)
 
 ---
 #### API Functions/Features:

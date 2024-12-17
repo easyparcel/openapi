@@ -28,7 +28,7 @@ The OAuth 2.0 authorization flow consists of the following steps:
 Ensure to use HTTPS to protect communication between clients and servers to prevent eavesdropping and man-in-the-middle attacks.
 
 ### Oauth Authentication Flow
-<img src="../pictures/Oauth%20Flow%20chart.png" alt="Flow Chart" style="height: 350px;">
+<img src="../pictures/Oauth%20Flow%20chart.png" alt="Flow Chart" style="height: 450px;">
 
 
 ### Authorization Endpoint

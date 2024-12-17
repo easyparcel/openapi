@@ -5,11 +5,10 @@
 The EasyParcel API allows your application to access current data within EasyParcel. However, EasyParcel API is using RESTful to develop API for web based applications. Through the API, several common operations can be performed on EasyParcel objects.
 
 ---
-First time user 
 
 ### Follow the guide below to integrate with easy parcel api.
-#### Get Authorization Token to get started with easy parcel api in the link below
-### [Get started with EASY PARCEL OPEN API | Get Authorization Token](Get%20started%20with%20EASY%20PARCEL%20OPEN%20API.md)
+
+### [Steps to get started with EASYPARCEL](Get%20started%20with%20EASY%20PARCEL%20OPEN%20API.md)
 
 ---
 ### Oauth Authentication

@@ -5,7 +5,6 @@ Get Insurance Quotation: This features enables users to check the insurance quot
 
 #### Requested Parameters
 
-L1
 
 | Requested Parameters | Type        | Required | Description                                                      |
 | -------------------- | ----------- | -------- | ---------------------------------------------------------------- |

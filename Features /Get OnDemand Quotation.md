@@ -5,8 +5,6 @@ Get OnDemand Quotation: This feature enables users to obtain OnDemand Shipment q
 
 #### Requested Parameters:
 
-L1
-
 | Requested Parameters | Type   | Required | Description                            |
 | -------------------- | ------ | -------- | -------------------------------------- |
 | schedule_pickup_date | date   | Yes      | Date to pickup the parcel              |
@@ -14,7 +12,6 @@ L1
 | timezone             | string | Yes      | TimeZone of the location of the parcel |
 | waypoint_list        | array  | Yes      | (refer to [waypoint_list](#waypoint_list)) |
 
-L2
 
 ###### waypoint_list
 
@@ -24,7 +21,6 @@ L2
 | address              | string | yes      | Address of the parcel                                            |
 | type                 | string | yes      | to pickup or drop off the parcel                                 |
 
-L3
 
 ###### coordinates
 
@@ -65,8 +61,6 @@ Sample Code:
 
 #### Returned Parameters:
 
-L1
-
 | Returned Parameters  | Type       | Description                      |
 | -------------------- | ---------- | -------------------------------- |
 | req_id               | string(25) | Courier identification number    |
@@ -84,7 +78,6 @@ L1
 | currency             | string     | currency used for the price      |
 | metadata             | array      | (refer to [metadata](#metadata)) |
 
-L2
 
 ###### metadata
 

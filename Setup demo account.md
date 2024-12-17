@@ -12,6 +12,7 @@
 ![AddConnection.png](pictures/AddConnection.png)
 
 5.)Demo account created
+![AddConnection.png](pictures/demo%20acc%20success.png)
 
 ### Top up demo account
 1.) in the Application settings, connection list, select top up

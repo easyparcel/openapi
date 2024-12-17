@@ -34,21 +34,7 @@ L2
 
 Sample Code:
 ```
-<?php
-
-$curl = curl_init();
-
-curl_setopt_array($curl, array(
-  CURLOPT_URL => 'http://localhost:8023/open_api/shipment/insurance_quotations',
-  CURLOPT_RETURNTRANSFER => true,
-  CURLOPT_ENCODING => '',
-  CURLOPT_MAXREDIRS => 10,
-  CURLOPT_TIMEOUT => 0,
-  CURLOPT_FOLLOWLOCATION => true,
-  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-  CURLOPT_CUSTOMREQUEST => 'POST',
-  CURLOPT_POSTFIELDS =>'{
-
+{
   "list": [
     {
       "courier_id": "EP-CR05",
@@ -95,17 +81,7 @@ curl_setopt_array($curl, array(
       "deli_country_code": "MY"
     }
   ]
-}',
-  CURLOPT_HTTPHEADER => array(
-    'Content-Type: application/json'
-  ),
-));
-
-$response = curl_exec($curl);
-
-curl_close($curl);
-echo $response;
-
+}
 ```
 
 ---
@@ -116,7 +92,7 @@ echo $response;
 
 | Returned Parameters  | Type       | Description                                                      |
 | -------------------- | ---------- | ---------------------------------------------------------------- |
-| currency_code        | string(25) | Courier Identification number                                    |
+| currency_code        | string     | Courier Identification number                                    |
 | shipment_weight      | double     | Weight of the parcel                                             |
 | shipment_length      | double     | Length of the parcel                                             |
 | shipment_width       | double     | Width of the parcel                                              |
@@ -252,6 +228,26 @@ Return Sample:
                 }
             ]
         },
+        {
+            "currency_code": "MYR",
+            "shipment_weight": 0.8,
+            "shipment_length": 100,
+            "shipment_width": 100,
+            "shipment_height": 100,
+            "coll_postcode": "11900",
+            "coll_province_code": "MY-07",
+            "coll_country_code": "MY",
+            "deli_postcode": "11900",
+            "deli_province_code": "MY-07",
+            "deli_country_code": "MY",
+            "insurance_quotations": [
+                {
+                    "quantity": 5,
+                    "value": 75,
+                    "insurance_list": []
+                }
+            ]
+        }
     ]
 }
 ```

@@ -15,48 +15,30 @@ L1
 | to_postcode          | string(10)  | Yes      | Receiver's postcode                                         |
 | to_state             | string(35)  | Yes      | Receiver's state (refer to [ISO_3166](../References/ISO%203166.md))            |
 | to_country           | string(2)   | Yes      | Receiver's country (refer to [country code](../References/Country%20Code.md)) |
-| weight               | double(8,2) | Yes      | The weight of the parcel.                                   |
-
+| weight               | double(8,2) | Yes      | The weight of the parcel.(in KG)                            |
+| width                | double(8,2) | Optional | The width of the parcel. (in CM)                            |
+| height               | double(8,2) | Optional | The height of the parcel.(in CM)                            |
+| lenght               | double(8,2) | Optional | The lenght of the parcel.(in CM)                            |
 
 Request Sample Code:
 ```
-<?php
-
-$curl = curl_init();
-
-curl_setopt_array($curl, array(
-  CURLOPT_URL => 'https://developer.easyparcel.com/open_api/shipment/quotations',
-  CURLOPT_RETURNTRANSFER => true,
-  CURLOPT_ENCODING => '',
-  CURLOPT_MAXREDIRS => 10,
-  CURLOPT_TIMEOUT => 0,
-  CURLOPT_FOLLOWLOCATION => true,
-  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-  CURLOPT_CUSTOMREQUEST => 'POST',
-  CURLOPT_POSTFIELDS =>'{
+{
   "list": [
     {
-      "from_postcode": "09600",
-      "from_state": "MY-02",
+      "from_postcode": "11900",
+      "from_state": "MY-07",
       "from_country": "my",
       "to_postcode": "11950",
       "to_state": "MY-07",
       "to_country": "my",
-      "weight": 0.5
+      "weight": 1,
+      "width":25,
+      "height":25,
+      "lenght":25
     }
        
   ]
-}',
-  CURLOPT_HTTPHEADER => array(
-    'Content-Type: application/json'
-  ),
-));
-
-$response = curl_exec($curl);
-
-curl_close($curl);
-echo $response;
-
+}
 ```
 
 ---

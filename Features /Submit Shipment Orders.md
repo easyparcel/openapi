@@ -5,8 +5,6 @@ Submit Shipment Orders: This features enables users to submit the shipment order
 
 #### Requested Parameters
 
-L1
-
 | Requested Parameters | Type        | Required | Description                                                                 |
 | -------------------- | ----------- | -------- | --------------------------------------------------------------------------- |
 | service_id           | string(10)  | Yes      | Service Identification number                                               |
@@ -19,8 +17,6 @@ L1
 | Origin               | array       | Yes      | Origin of the parcel (refer to [origin](#Origin))                           |
 | Destination          | array       | Yes      | Destination of the parcel to sent to (refer to [destination](#destination)) |
 | awb_branding         | array       | Yes      | Airway bill branding(refer to [awb_branding](#awb_branding))                |
-
-Request L2
 
 ###### Origin
 
@@ -62,7 +58,6 @@ Request L2
 | enable               | boolean | Yes      | To enable or disable Airways Bills Branding |
 
 
-
 ###### Items
 
 | Requested Parameters | Type        | Required | Description                                                                      |
@@ -92,7 +87,6 @@ Request L3
 | invoices             | string | Yes      | links to the invoices    |
 | photos               | string | Yes      | Image location           |
 
-Request L4
 
 ##### sms
 | Requested Parameters | Type    | Required | Description                                         |
@@ -110,8 +104,6 @@ Request L4
 | Requested Parameters | Type    | Required | Description                                              |
 | -------------------- | ------- | -------- | -------------------------------------------------------- |
 | enable               | boolean | Yes      | To enable or disable whatsapp notification of the parcel |
-
-
 
 
 Request Sample Code:
@@ -260,8 +252,6 @@ Request Sample Code:
 
 #### Returned parameters
 
-L1
-
 | Returned Parameters        | Type       | Description                                                                                                    |
 | -------------------------- | ---------- | -------------------------------------------------------------------------------------------------------------- |
 | app_uuid                   | string(25) | Courier identification number                                                                                  |
@@ -276,8 +266,6 @@ L1
 | shipment_tracking_whatsapp | array      | Shipment notification details on whatsapp (refer to [shipment_tracking_whatsapp](#shipment_tracking_whatsapp)) |
 | shipment_tracking_sms      | array      | Shipment notification details on sms                                                                           |
 | shipment_tracking_email    | array      | Shipment notification details on email                                                                         |
-
-L2
 
 ###### shipments
 
@@ -381,7 +369,6 @@ L2
 | email               | string | email of the email notifications receiver                      |
 
 
-L3
 ###### shipment items
 | Requested Parameters | Type       | Description                            |
 | -------------------- | ---------- | -------------------------------------- |

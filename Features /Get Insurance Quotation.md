@@ -122,10 +122,10 @@ echo $response;
 | shipment_width       | double     | Width of the parcel                                              |
 | shipment_height      | double     | Height of the parcel                                             |
 | coll_postcode        | string     | Sender's postcode                                                |
-| coll_province_code   | string     | Sender's province code (refer to [ISO 3166](../References/ISO%3166.md))           |
+| coll_province_code   | string     | Sender's province code (refer to [ISO 3166](../References/ISO%203166.md))           |
 | coll_country_code    | string     | Sender's country code (refer to [country code](../References/Country%20Code.md))  |
 | deli_postcode        | string     | Receiver's postcode                                              |
-| deli_province_code   | string     | Receiver's province code (refer to [ISO 3166](../References/ISO%3166.md))         |
+| deli_province_code   | string     | Receiver's province code (refer to [ISO 3166](../References/ISO%203166.md))         |
 | deli_country_code    | string     | Receiver's country code (refer to [country code](../References/Country%20Code.md)) |
 | insurance_quotations | array      | (refer to [insurance_quotations](#insurance_quotations))         |
 

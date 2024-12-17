@@ -1,7 +1,7 @@
 ## Oauth Authentication
 
 ### Oauth Authentication Flow
-<img src="pictures/Oauth%20Flow%20chart.png" alt="Flow Chart" style="height=350px;">
+<img src="pictures/Oauth%20Flow%20chart.png" alt="Flow Chart" style="height=300px;">
 
 
 1. Client               -> Authorization Request  -> Authorization Server

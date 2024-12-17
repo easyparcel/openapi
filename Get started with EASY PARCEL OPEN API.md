@@ -2,7 +2,9 @@
 
 ### [Back to official documentation](README.md)
 
-### How to get start with EasyParcel API.
+### [Setup up demo account](Setup%20demo.md)
+
+### How to get start with EasyParcel API. 
 
 1.) Developers Hub to register an account [https://developer.easyparcel.com](https://developer.easyparcel.com/)
 

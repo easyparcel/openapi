@@ -28,15 +28,15 @@ Request L2
 | ------------------------- | --------- | -------- | -------------------------------------------------- |
 | name                      | string    | Yes      | Sender's Name                                      |
 | company                   | string    | Yes      | Sender's Company                                   |
-| phone_number_country_code | string    | Yes      | (refer to [country code](#country-code))           |
+| phone_number_country_code | string    | Yes      | (refer to [Country Code](../References/Country%20Code.md))           |
 | phone_number              | string    | Yes      | Sender's phone number                              |
 | email                     | string    | Yes      | Sender's email                                     |
 | address_1                 | string    | Yes      | Sender's address                                   |
 | address_2                 | string    | Yes      | Sender's address                                   |
 | postcode                  | string    | Yes      | Sender's postcode                                  |
 | town                      | string    | Yes      | Sender's town area                                 |
-| province_code             | string    | Yes      | Sender's province (refer to [ISO- 3166](#iso3166)) |
-| country_code              | string(2) | Yes      | (refer to [country code](#country-code))           |
+| province_code             | string    | Yes      | Sender's province (refer to [ISO 3166](../References/ISO%203166.md)) |
+| country_code              | string(2) | Yes      | (refer to [Country Code](../References/Country%20Code.md))           |
 
 ###### Destination
 
@@ -51,8 +51,8 @@ Request L2
 | address_2                 | string    | Yes      | Receiver's address                                                          |
 | postcode                  | string    | Yes      | Receiver's postcode                                                         |
 | town                      | string    | Yes      | Receiver's town area                                                        |
-| province_code             | string    | Yes      | Receiver's province (refer to [ISO- 3166](#iso3166))                        |
-| country_code              | string(2) | Yes      | Receiver's country code(refer to [country code](#country-code))             |
+| province_code             | string    | Yes      | Receiver's province (refer to (refer to [ISO 3166](../References/ISO%203166.md))                        |
+| country_code              | string(2) | Yes      | Receiver's country code(refer to [Country Code](../References/Country%20Code.md))             |
 | Notification              | array     | Yes      | Notifications of the parcel status (refer to [Notification](#Notification)) |
 
 ###### awb_branding

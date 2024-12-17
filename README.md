@@ -1,4 +1,6 @@
-<img src="pictures/EasyParcel-TransparentSquare-md.png" alt="Logo" style="width:250px; margin:0; padding:0;">
+<div style="text-align: center;">
+  <img src="pictures/EasyParcel-TransparentSquare-md.png" alt="Logo" style="width:250px; margin:0; padding:0;">
+</div>
 
 # Easy Parcel API  
 

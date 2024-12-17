@@ -17,10 +17,10 @@ Get Insurance Quotation: This features enables users to check the insurance quot
 | shipment_height      | double(8,2) | Optional | Height of the parcel                                             |
 | coll_postcode        | string(10)  | Yes      | Sender's post code                                               |
 | coll_province_code   | string(35)  | Yes      | Sender's province code                                           |
-| coll_country_code    | string(2)   | Yes      | Sender's country code (refer to (refer to [country code](../References/Country%20Code.md))   |
+| coll_country_code    | string(2)   | Yes      | Sender's country code (refer to [country code](../References/Country%20Code.md))   |
 | deli_postcode        | string(10)  | Yes      | Receiver's post code                                             |
 | deli_province_code   | string(35)  | Yes      | Receiver's province code (refer to [ISO 3166](../References/ISO%203166.md)                                         |
-| deli_country_code    | string(2)   | Yes      | Receiver's country code (refer to (refer to [country code](../References/Country%20Code.md) |
+| deli_country_code    | string(2)   | Yes      | Receiver's country code (refer to [country code](../References/Country%20Code.md)) |
 
 L2
 
@@ -120,8 +120,8 @@ echo $response;
 | shipment_width       | double     | Width of the parcel                                              |
 | shipment_height      | double     | Height of the parcel                                             |
 | coll_postcode        | string     | Sender's postcode                                                |
-| coll_province_code   | string     | Sender's province code (refer to (refer to [ISO 3166](../References/ISO%3166.md))           |
-| coll_country_code    | string     | Sender's country code (refer to (refer to [country code](../References/Country%20Code.md))  |
+| coll_province_code   | string     | Sender's province code (refer to [ISO 3166](../References/ISO%3166.md))           |
+| coll_country_code    | string     | Sender's country code (refer to [country code](../References/Country%20Code.md))  |
 | deli_postcode        | string     | Receiver's postcode                                              |
 | deli_province_code   | string     | Receiver's province code (refer to [ISO 3166](../References/ISO%3166.md))         |
 | deli_country_code    | string     | Receiver's country code (refer to [country code](../References/Country%20Code.md)) |

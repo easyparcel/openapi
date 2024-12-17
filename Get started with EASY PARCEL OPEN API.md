@@ -39,6 +39,7 @@ Get Client ID to pass to the Oauth URL
 
 ![get client id.png](pictures/get%20client%20id.png)
 
-5.)Get the access token
+5.)Get the access token via [Oauth](Oauth/Oauth%20Authentication.md)
+
 
 6.)Call the API

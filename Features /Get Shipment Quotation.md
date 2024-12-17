@@ -11,10 +11,10 @@ L1
 | -------------------- | ----------- | -------- | ----------------------------------------------------------- |
 | from_postcode        | string(10)  | Yes      | Sender's postcode                                           |
 | from_state           | string(35)  | Yes      | Sender's state (refer to [ISO_3166](../References/ISO%203166.md))              |
-| from_country         | string(2)   | Yes      | Sender's country (refer to [country code](../References/country%20code.md)   |
+| from_country         | string(2)   | Yes      | Sender's country (refer to [country code](../References/Country%20Code.md)   |
 | to_postcode          | string(10)  | Yes      | Receiver's postcode                                         |
 | to_state             | string(35)  | Yes      | Receiver's state (refer to [ISO_3166](../References/ISO%203166.md))            |
-| to_country           | string(2)   | Yes      | Receiver's country (refer to [country code](../References/country%20code.md)) |
+| to_country           | string(2)   | Yes      | Receiver's country (refer to [country code](../References/Country%20Code.md)) |
 | weight               | double(8,2) | Yes      | The weight of the parcel.                                   |
 
 

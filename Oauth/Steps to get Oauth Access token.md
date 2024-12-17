@@ -1,6 +1,6 @@
 ### Steps to get OAuth Authorization Access token
 
-#### [More details on Oauth](Oauth%20Authentication)
+#### [More details on Oauth](Oauth%20Authentication.md)
 
 1.) Pass the above params to the urls
 `https://developer.easyparcel.com/ep_auth/login`

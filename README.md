@@ -27,6 +27,8 @@ First time user
 
 **[Submit OnDemand Order](Features%20/Submit-OnDemand-Order)**
 
+**[Submit OnDemand Order](Features%20/Get-Wallet)**
+
 ---
 
 ### Order function Flow

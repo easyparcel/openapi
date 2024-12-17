@@ -59,15 +59,15 @@ Return Sample:
     "message": "",
     "data": [
         {
-            "point_code": "Pos Malaysia Lunas",
-            "name": "Pos Malaysia Lunas",
+            "point_code": "Pos Malaysia Penang",
+            "name": "Pos Malaysia Penang",
             "address_1": "894",
             "address_2": "Taman Sejahtera",
             "address_3": "",
             "address_4": "",
-            "postcode": "09600",
-            "city": "Lunas",
-            "state": "kdh",
+            "postcode": "11900",
+            "city": "Bayan baru",
+            "state": "png",
             "phone_number": "04-484 4221",
             "info": "",
             "image": null,
@@ -82,4 +82,4 @@ Return Sample:
 }
 
 ```
-</details>
+

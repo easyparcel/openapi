@@ -12,6 +12,7 @@ L1
 | schedule_pickup_date | date   | Yes      | Date to pickup the parcel              |
 | schedule_pickup_time | time   | Yes      | Time to pickup the parcel              |
 | timezone             | string | Yes      | TimeZone of the location of the parcel |
+| waypoint_list        | array  | Yes      | (refer to [waypoint_list](#waypoint_list)) |
 
 L2
 
@@ -21,7 +22,7 @@ L2
 | -------------------- | ------ | -------- | ---------------------------------------------------------------- |
 | coordinates          | array  | yes      | coordinates of the parcel (refer to [coordinates](#coordinates)) |
 | address              | string | yes      | Address of the parcel                                            |
-| type                 | string | yes      | pickup type                                                      |
+| type                 | string | yes      | to pickup or drop off the parcel                                 |
 
 L3
 

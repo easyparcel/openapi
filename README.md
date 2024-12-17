@@ -11,6 +11,9 @@ First time user
 #### Get Authorization Token to get started with easy parcel api in the link below
 ### [Get started with EASY PARCEL OPEN API | Get Authorization Token](Get%20started%20with%20EASY%20PARCEL%20OPEN%20API.md)
 
+---
+### Oauth Authentication
+#### [Oauth Authentication](Oauth%20Authentication.md)
 
 ---
 #### API Functions/Features:
@@ -23,11 +26,11 @@ First time user
 
 **[Submit Shipment Orders](Features%20/Submit%20Shipment%20Orders.md)**
 
-**[Get OnDemand Quotation](Features%20/Get-OnDemand-Quotation)**
+**[Get OnDemand Quotation](Features%20/Get%20OnDemand%20Quotation)**
 
-**[Submit OnDemand Order](Features%20/Submit-OnDemand-Order)**
+**[Submit OnDemand Order](Features%20/Submit%20OnDemand%20Order)**
 
-**[Submit OnDemand Order](Features%20/Get-Wallet)**
+**[Submit OnDemand Order](Features%20/Get%20Wallet.md)**
 
 ---
 

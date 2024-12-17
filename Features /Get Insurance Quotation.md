@@ -106,6 +106,7 @@ echo $response;
 
 ```
 
+---
 
 ### Returned Parameters
 

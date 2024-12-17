@@ -21,13 +21,14 @@ Request:
 		
 	![Login%20Page.png](../pictures/Login%20Page.png)
 
-2. Select an account desire to link
+2. Select an account desire to link (You can select either Demo or live account)
+   [To setup demo account](../GetStarted/Setup%20demo%20account.md)
    
 		
    	![select account](../pictures/select%20account.png)
 
 
-3.  Allow access to Authorize link the account to with the application
+4.  Allow access to Authorize link the account to with the application
    
 		
 	 ![allow access.png](../pictures/allow%20access.png)

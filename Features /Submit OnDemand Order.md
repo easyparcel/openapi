@@ -9,7 +9,7 @@ L1
 
 | Requested Parameters | Type      | Required | Description                                                                                                                                         |
 | -------------------- | --------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| from_country         | string(2) | Yes      | Sender's country (refer to [country code](#country-code))                                                                                           |
+| from_country         | string(2) | Yes      | Sender's country (refer to [Country Code](../References/Country%20Code.md))                                                                                           |
 | ondemand_service_id  | string    | Yes      | ondemand service id                                                                                                                                 |
 | waypoint_list        | array     | Yes      | An array of waypoints, detailing each stop in the delivery route, including pickup and dropoff locations (refer to [waypoint-list](#Waypoint-list)) |
 | schedule_pickup_date | date      | Yes      | Preferred parcel pickup date                                                                                                                        |
@@ -29,7 +29,7 @@ L2
 | firstName                 | string     | Yes      | Sender's first name                                                        |
 | email                     | string     | Yes      | Sender's email name                                                        |
 | package                   | array      | Yes      | Package descriptions and quantity (refer to [Package](#Package))           |
-| phone_number_country_code | string (2) | Yes      | Sender's phone number country code(refer to [country code](#country-code)) |
+| phone_number_country_code | string (2) | Yes      | Sender's phone number country code(refer to [Country Code](../References/Country%20Code.md)) |
 | phone_number              | string     | Yes      | Sender's phone number                                                      |
 | address                   | string     | Yes      | Address of the parcel                                                      |
 | remark                    | string     | Yes      | Remarks for the parcel and shipping                                        |

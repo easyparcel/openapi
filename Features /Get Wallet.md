@@ -1,10 +1,14 @@
 ### Get Wallet
 Get Wallet: This features enables users to check their account wallet details/status.
 
+### [Request](#Requested-Parameters)  |  [Return](#Returned-Parameters) 
+
+#### Requested Parameters
 Request Sample Code:
 ```
 https://developer.easyparcel.com/wallet
 ```
+#### Returned Parameters
 
 | Returned Parameters | Type      | Description                                     |
 | ------------------- | --------- | ----------------------------------------------- |

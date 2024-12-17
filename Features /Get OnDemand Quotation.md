@@ -35,20 +35,7 @@ L3
 
 Sample Code:
 ```
-<?php
-
-$curl = curl_init();
-
-curl_setopt_array($curl, array(
-  CURLOPT_URL => 'http://localhost:8023/open_api/ondemand/quotation',
-  CURLOPT_RETURNTRANSFER => true,
-  CURLOPT_ENCODING => '',
-  CURLOPT_MAXREDIRS => 10,
-  CURLOPT_TIMEOUT => 0,
-  CURLOPT_FOLLOWLOCATION => true,
-  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-  CURLOPT_CUSTOMREQUEST => 'POST',
-  CURLOPT_POSTFIELDS =>'{
+{
     "schedule_pickup_date": "2024-11-30",
     "schedule_pickup_time": "11:48:35",
     "timezone": "Asia/Kuala_Lumpur",
@@ -70,19 +57,8 @@ curl_setopt_array($curl, array(
             "type": "dropoff"
         }
     ]
-}',
-  CURLOPT_HTTPHEADER => array(
-    'Content-Type: application/json'
-  ),
-));
-
-$response = curl_exec($curl);
-
-curl_close($curl);
-echo $response;
-
+}
 ```
-</details>
 
 ---
 

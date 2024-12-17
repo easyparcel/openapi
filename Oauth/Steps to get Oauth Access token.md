@@ -87,7 +87,7 @@ Request:
 }
 ```
 
-L1 Respond
+
 
 | Responded Parameters     | Type      | Details                                                                            |
 | ------------------------ | --------- | ---------------------------------------------------------------------------------- |
@@ -100,7 +100,7 @@ L1 Respond
 | refresh_token_expires_at | date time | The refresh token expiry date                                                      |
 | App                      | array     | Refer to [L2 (App)](#App)                                                          |
 
-L2 Respond
+
 (**App**)
 ##### App
 

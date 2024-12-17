@@ -37,3 +37,16 @@ The EasyParcel API allows your application to access current data within EasyPar
 <img src="pictures/Flow%20Chart.png" alt="Flow Chart" style="width:40%; margin:0; padding:0;">
 
 ---
+
+### References
+
+**[API Return Status](References/API%20Return%20Status.md)**
+
+**[Conutry Code](References/Country%20Code.md)**
+
+**[ISO 3166](References/ISO%203166.md)**
+
+**[Insurance Courier List](References/Insurance%20Courier%20List.md)**
+
+**[Malaysia State Code](References/Malaysia%20State%20Code.md)**
+

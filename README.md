@@ -15,8 +15,8 @@ First time user
 ---
 #### API Functions/Features:
 
-**[Get Shipment Quotation](Features/Get%20Shipment%20Quotation.md)**
-
+**[Get Shipment Quotation](features/Get%20Shipment%20Quotation.md)**
+[a relative link](features/Get%20Shipment%20Quotation.md)
 **[Get Insurance Quotation](Features/Get%20Insurance%20Quotation.md)**
 
 **[Get Courier Dropoff point](Features/Get%20Courier%20Dropoff%20point.md)**

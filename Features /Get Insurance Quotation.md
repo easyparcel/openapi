@@ -88,8 +88,6 @@ Sample Code:
 
 ### Returned Parameters
 
- L1
-
 | Returned Parameters  | Type       | Description                                                      |
 | -------------------- | ---------- | ---------------------------------------------------------------- |
 | currency_code        | string     | Courier Identification number                                    |
@@ -105,7 +103,6 @@ Sample Code:
 | deli_country_code    | string     | Receiver's country code (refer to [country code](../References/Country%20Code.md)) |
 | insurance_quotations | array      | (refer to [insurance_quotations](#insurance_quotations))         |
 
-L2
 ###### insurance_quotations
 
 | Returned Parameters | Type   | Description                                                               |
@@ -114,7 +111,6 @@ L2
 | value               | double | value of the insurance                                                    |
 | insurance_list      | array  | List of available insurances (refer to [insurance_list](#insurance_list)) |
 
-L3
 
 ###### insurance_list
 
@@ -128,7 +124,6 @@ L3
 | rate                  | array  | Rate of the insurance (refer to [rate](#rate)) |
 | price                 | double | Rrice of the insurance coverage                |
 
-L4
 
 ###### rate
 

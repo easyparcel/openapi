@@ -3,17 +3,7 @@
 ### [Back to official documentation](README.md)
 
 ### How to get start with EasyParcel API.
-1.) Register Developers Hub
 
-2.) Create App
-
-3.) [Oauth Authentication](#Oauth%20Authentication)
-   
-4.) access token
-
-5.) Calling the API
-
-#### Steps to get started.
 1.) Developers Hub to register an account [https://developer.easyparcel.com](https://developer.easyparcel.com/)
 
 

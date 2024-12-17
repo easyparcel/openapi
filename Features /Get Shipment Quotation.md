@@ -63,7 +63,7 @@ echo $response;
 
 #### Returned Parameters:
 
-Return L1
+L1
 
 | Returned Parameters | Type       | Description                                                         |
 | ------------------- | ---------- | ------------------------------------------------------------------- |
@@ -78,7 +78,7 @@ Return L1
 | uuid                | string     | UUID of the Quotation                                               |
 | quotations          | array      | Quotations / Service available (refer to [quotations](#quotations)) |
 
-Return L2
+L2
 ###### quotations
 
 | Returned Parameters        | Type    | Description                                                  |

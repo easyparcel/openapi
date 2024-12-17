@@ -108,7 +108,7 @@ echo $response;
 ```
 
 
-### Requested Parameters
+### Returned Parameters
 
  L1
 

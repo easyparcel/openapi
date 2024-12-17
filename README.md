@@ -49,8 +49,3 @@ EasyParcel's API employs the OAuth 2.0 authorization framework to provide secure
 **[Conutry Code](References/Country%20Code.md)**
 
 **[ISO 3166](References/ISO%203166.md)**
-
-**[Insurance Courier List](References/Insurance%20Courier%20List.md)**
-
-**[Malaysia State Code](References/Malaysia%20State%20Code.md)**
-

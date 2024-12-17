@@ -12,22 +12,6 @@ The EasyParcel API allows your application to access current data within EasyPar
 ---
 
 
-**Links to our API**
-
-All API URLs start with the following base part:
-
-| API         | Link                               |
-| ----------- | ---------------------------------- |
-| Development | http://demo.connect.easyparcel.my/ |
-| Production  | https://connect.easyparcel.my/     |
-
-
-- Demo URL is only for testing purposes.
-
-- Live URL is for real live transaction usage.
-
----
-
 ### Follow the guide below to integrate with easy parcel api.
 #### Get Authorization Token to get started with easy parcel api in the link below
 ### [Get started with EASY PARCEL OPEN API | Get Authorization Token](Get%20started%20with%20EASY%20PARCEL%20OPEN%20API.md)

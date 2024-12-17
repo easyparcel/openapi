@@ -15,17 +15,17 @@ First time user
 ---
 #### API Functions/Features:
 
-**[Get Shipment Quotation](#Get-Shipment-Quotation)**
+**[Get Shipment Quotation](#Features/Get-Shipment-Quotation)**
 
-**[Get Insurance Quotation](#Get-Insurance-Quotation)**
+**[Get Insurance Quotation](#Features/Get-Insurance-Quotation)**
 
-**[Get Courier Dropoff point](#Get-Courier-Dropoff-point)**
+**[Get Courier Dropoff point](#Features/Get-Courier-Dropoff-point)**
 
-**[Submit Shipment Orders](#Submit-Shipment-Orders)**
+**[Submit Shipment Orders](#Features/Submit-Shipment-Orders)**
 
-**[Get OnDemand Quotation](#Get-OnDemand-Quotation)**
+**[Get OnDemand Quotation](#Features/Get-OnDemand-Quotation)**
 
-**[Submit OnDemand Order](#Submit-OnDemand-Order)**
+**[Submit OnDemand Order](#Features/Submit-OnDemand-Order)**
 
 ---
 

@@ -5,8 +5,6 @@ Submit OnDemand Orders: This features enables users to submit the OnDemand shipm
 
 #### Requested Parameters:
 
-L1
-
 | Requested Parameters | Type      | Required | Description                                                                                                                                         |
 | -------------------- | --------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
 | from_country         | string(2) | Yes      | Sender's country (refer to [Country Code](../References/Country%20Code.md))                                                                                           |
@@ -16,8 +14,6 @@ L1
 | schedule_pickup_time | time      | Yes      | Preferred parcel pickup time                                                                                                                        |
 | timezone             | string    | Yes      | Timezone of the parcel located at                                                                                                                   |
 | metadata             | array     | Yes      | refer to [metadata](#metadata)                                                                                                                      |
-
-L2 
 
 ###### Waypoint list
 
@@ -40,7 +36,7 @@ L2
 | -------------------- | ---------- | -------- | ---------------------------------- |
 | quotationId          | string(35) | Yes      | Unique Id of the request quotation |
 
-L3
+
 ###### Coordinates
 
 | Requested Parameters | Type   | Required | Description                      |
@@ -56,7 +52,7 @@ L3
 | description          | string | Yes      | Parcel / content description                               |
 | Dimension            | array  | Yes      | Dimension of the parcel (refer to [Dimension](#Dimension)) |
 
-L4 
+
 ###### Dimension
 
 | Requested Parameters | Type         | Required | Description          |
@@ -141,7 +137,6 @@ Request Sample code:
 
 #### Returned parameters
 
-L1
 
 | Returned Parameters | Type   | Description                                                              |
 | ------------------- | ------ | ------------------------------------------------------------------------ |
@@ -151,7 +146,7 @@ L1
 | tracking_url        | string | url that link customer to the tracking page to check the delivery status |
 | ondemand_payment    | array  | (refer to [ondemand_payment](#ondemand_payment))                         |
 
-L2
+
 ###### ondemand_payment
 | Requested Parameters | Type   | Description                                 |
 | -------------------- | ------ | ------------------------------------------- |

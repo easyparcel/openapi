@@ -516,7 +516,7 @@ Return L2
 | value               | double | value of the insurance                                                    |
 | insurance_list      | array  | List of available insurances (refer to [insurance_list](#insurance_list)) |
 
-L3
+Return L3
 ###### insurance_list
 
 | Returned Parameters   | Type   | Description                                    |
@@ -529,7 +529,7 @@ L3
 | rate                  | array  | Rate of the insurance (refer to [rate](#rate)) |
 | price                 | double | Rrice of the insurance coverage                |
 
-L4
+Return L4
 ###### rate
 
 | Returned Parameters | Type   | Description                                              |
@@ -1647,6 +1647,7 @@ Submit OnDemand Orders: This features enables users to submit the OnDemand shipm
   <summary><h5>Request:</h5></summary> 
  
 Parameter used:
+
 Request L1
 
 | Requested Parameters | Type      | Required | Description                                                                                                                                         |

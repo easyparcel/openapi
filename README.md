@@ -12,8 +12,10 @@ The EasyParcel API allows your application to access current data within EasyPar
 
 ---
 ### Oauth Authentication
-#### [Oauth Authentication](Oauth/Oauth%20Authentication.md)
 
+EasyParcel's API employs the OAuth 2.0 authorization framework to provide secure and controlled access to its services.
+
+### [More about Oauth Authentication](Oauth/Oauth%20Authentication.md)
 ---
 #### API Functions/Features:
 

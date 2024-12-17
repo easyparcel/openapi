@@ -5,7 +5,6 @@ Get Shipment Quotation: This feature enables users to obtain shipment quotations
 
 #### Requested Parameters:
 
-L1
 
 | Requested Parameters | Type        | Required | Description                                                 |
 | -------------------- | ----------- | -------- | ----------------------------------------------------------- |
@@ -45,7 +44,6 @@ Request Sample Code:
 
 #### Returned Parameters:
 
-L1
 
 | Returned Parameters | Type       | Description                                                         |
 | ------------------- | ---------- | ------------------------------------------------------------------- |
@@ -60,7 +58,6 @@ L1
 | uuid                | string     | UUID of the Quotation                                               |
 | quotations          | array      | Quotations / Service available (refer to [quotations](#quotations)) |
 
-L2
 ###### quotations
 
 | Returned Parameters        | Type    | Description                                                  |

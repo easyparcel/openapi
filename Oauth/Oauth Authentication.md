@@ -42,6 +42,6 @@ The Authorization Endpoint is used by the client to obtain authorization from th
 
 ### Token Endpoint
 The Token Endpoint is used by the client to obtain an access token by presenting its authorization grant.
-**Endpoint URL**: 
+#### Endpoint URL: 
 `https://developer.easyparcel.com/ep_auth/token`
 

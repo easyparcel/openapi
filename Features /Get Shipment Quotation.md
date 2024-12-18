@@ -1,5 +1,6 @@
 ### Get Shipment Quotation:
 Get Shipment Quotation: This feature enables users to obtain shipment quotations from all courier companies available on the EasyParcel platform. Users need to provide sender and receiver addresses to check the shipment quotation.
+#### [Feature/Endpoints](README.md)  |  [Back to official documentation](../README.md) 
 
 ### [Request](#Requested-Parameters)  |  [Return](#Returned-Parameters) 
 

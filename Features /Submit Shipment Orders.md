@@ -1,6 +1,8 @@
 ### Submit Shipment Orders
 Submit Shipment Orders: This features enables users to submit the shipment orders. Users are required to fill in the necessary fields to access the insurance rate information.
 
+#### [Feature/Endpoints](README.md)  |  [Back to official documentation](../README.md) 
+
 ### [Request](#Requested-Parameters)  |  [Return](#Returned-Parameters) 
 
 #### Requested Parameters

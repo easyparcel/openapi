@@ -4,7 +4,7 @@ Get Courier Drop off point: This features enables users to check the available D
 #### [Feature/Endpoints](README.md)  |  [Back to official documentation](../README.md) 
 
 #### Endpoint URL: 
-`https://developer.easyparcel.com/open_api/shipment/get_courier_dropoff_points`
+`https://api.easyparcel.com/open_api/shipment/get_courier_dropoff_points`
 
 ### [Request](#Requested-Parameters)  |  [Return](#Returned-Parameters) 
 

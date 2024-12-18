@@ -3,6 +3,9 @@ Submit Shipment Orders: This features enables users to submit the shipment order
 
 #### [Feature/Endpoints](README.md)  |  [Back to official documentation](../README.md) 
 
+#### Endpoint URL: 
+`https://api.easyparcel.com/shipment/submit_orders`
+
 ### [Request](#Requested-Parameters)  |  [Return](#Returned-Parameters) 
 
 #### Requested Parameters

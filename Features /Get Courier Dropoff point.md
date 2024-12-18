@@ -1,6 +1,8 @@
 ### Get Courier Dropoff point
 Get Courier Drop off point: This features enables users to check the available Drop off point for selected courier and zones. Users are required to fill in the necessary fields to access the insurance rate information.
 
+#### [Feature/Endpoints](README.md)  |  [Back to official documentation](../README.md) 
+
 ### [Request](#Requested-Parameters)  |  [Return](#Returned-Parameters) 
 
 #### Requested Parameters

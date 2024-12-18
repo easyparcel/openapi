@@ -321,7 +321,7 @@ Request Sample Code:
 | height                                       | double     | Height of the shipment parcels                                                    |
 | lenght                                       | double     | Lenght of the particular shipment                                                 |
 | width                                        | double     | Width of the particular shipment                                                  |
-| shipment_items                               | array      | Shipments items details (refer to [shipment items]                                |(#shipment-items) |
+| shipment_items                               | array      | Shipments items details (refer to [shipment items](#shipment-items) |
 
 
 ###### shipment_tracking_whatsapp

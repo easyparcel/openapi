@@ -12,7 +12,7 @@ Submit OnDemand Orders: This features enables users to submit the OnDemand shipm
 
 | Requested Parameters | Type      | Required | Description                                                                                                                                         |
 | -------------------- | --------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| from_country         | string(2) | Yes      | Sender's country (refer to [Country Code](../References/Country%20Code.md))                                                                                           |
+| from_country         | string    | Yes      | Sender's country (refer to [Country Code](../References/Country%20Code.md))                                                                                           |
 | ondemand_service_id  | string    | Yes      | ondemand service id                                                                                                                                 |
 | waypoint_list        | array     | Yes      | An array of waypoints, detailing each stop in the delivery route, including pickup and dropoff locations (refer to [waypoint-list](#Waypoint-list)) |
 | schedule_pickup_date | date      | Yes      | Preferred parcel pickup date                                                                                                                        |

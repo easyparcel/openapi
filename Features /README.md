@@ -24,4 +24,4 @@ Below are all the Functions and Endpoints available for the API
 
 ### Wallet
 
-**[Get Wallet](Features%20/Get%20Wallet.md)**
+**[Get Wallet](Get%20Wallet.md)**

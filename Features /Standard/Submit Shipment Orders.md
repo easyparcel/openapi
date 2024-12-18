@@ -29,7 +29,7 @@ Submit Shipment Orders: This features enables users to submit the shipment order
 | ------------------------- | --------- | -------- | -------------------------------------------------- |
 | name                      | string    | Yes      | Sender's Name                                      |
 | company                   | string    | Yes      | Sender's Company                                   |
-| phone_number_country_code | string    | Yes      | (refer to [Country Code](../References/Country%20Code.md))           |
+| phone_number_country_code | string    | Yes      | (refer to [Country Code](../../References/Country%20Code.md))           |
 | phone_number              | string    | Yes      | Sender's phone number                              |
 | email                     | string    | Yes      | Sender's email                                     |
 | address_1                 | string    | Yes      | Sender's address                                   |
@@ -37,7 +37,7 @@ Submit Shipment Orders: This features enables users to submit the shipment order
 | postcode                  | string    | Yes      | Sender's postcode                                  |
 | town                      | string    | Yes      | Sender's town area                                 |
 | province_code             | string    | Yes      | Sender's province (refer to [ISO 3166](../References/ISO%203166.md)) |
-| country_code              | string(2) | Yes      | (refer to [Country Code](../References/Country%20Code.md))           |
+| country_code              | string(2) | Yes      | (refer to [Country Code](../../References/Country%20Code.md))           |
 
 ###### Destination
 
@@ -52,8 +52,8 @@ Submit Shipment Orders: This features enables users to submit the shipment order
 | address_2                 | string    | Yes      | Receiver's address                                                          |
 | postcode                  | string    | Yes      | Receiver's postcode                                                         |
 | town                      | string    | Yes      | Receiver's town area                                                        |
-| province_code             | string    | Yes      | Receiver's province (refer to (refer to [ISO 3166](../References/ISO%203166.md))                        |
-| country_code              | string(2) | Yes      | Receiver's country code(refer to [Country Code](../References/Country%20Code.md))             |
+| province_code             | string    | Yes      | Receiver's province (refer to (refer to [ISO 3166](../../References/ISO%203166.md))                        |
+| country_code              | string(2) | Yes      | Receiver's country code(refer to [Country Code](../../References/Country%20Code.md))             |
 | Notification              | array     | Yes      | Notifications of the parcel status (refer to [Notification](#Notification)) |
 
 ###### awb_branding
@@ -283,7 +283,7 @@ Request Sample Code:
 | shipment_price                               | double     | Price of this particular shipment                                                 |
 | tax_amount                                   | double     | Tax amount of this particular shipment                                            |
 | collection_date                              | date       | Collection date of the parcel                                                     |
-| tracking_status                              | int        | The tracking status of the parcel ()                                              |
+| tracking_status                              | int        | The tracking status of the parcel                                               |
 | awb_url                                      | string     | The url to access the airway bill                                                 |
 | awb_number                                   | string     | The airway bill number                                                            |
 | tracking_url                                 | string     | The url to tracking the parcel                                                    |
@@ -299,9 +299,9 @@ Request Sample Code:
 | sender_address1                              | string     | Sender's Address 1                                                                |
 | sender_address2                              | string     | Sender's Address 2                                                                |
 | sender_city                                  | string     | Sender's city                                                                     |
-| sender_province_code                         | string     | Sender's province (refer to [ISO 3166](../References/ISO%203166.md))             |
+| sender_province_code                         | string     | Sender's province (refer to [ISO 3166](../../References/ISO%203166.md))             |
 | sender_postcode                              | string     | Sender's post code                                                                |
-| sender_country_code                          | string     | Sender's country code (refer to [Country Code](../References/Country%20Code.md)) |
+| sender_country_code                          | string     | Sender's country code (refer to [Country Code](../../References/Country%20Code.md)) |
 | receiver_point_code                          | string     | A unique identifier for the sender's location                                     |
 | receiver_name                                | string     | Name of the receiver                                                              |
 | receiver_phone_number_country_code           | string     | The country code of the phone of the receiver                                     |

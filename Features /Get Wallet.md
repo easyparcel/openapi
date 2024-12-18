@@ -8,7 +8,7 @@ Get Wallet: This features enables users to check their account wallet details/st
 #### Requested Parameters
 Request Sample Code:
 ```
-https://developer.easyparcel.com/wallet
+https://api.easyparcel.com/wallet
 ```
 #### Returned Parameters
 

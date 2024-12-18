@@ -1,6 +1,8 @@
-## Steps to setup demo account  | [Top up demo account](#Top-up-demo-account)
+## Setup Demo Account  | [Top up demo account](#Top-up-demo-account)
 
 #### [Get started with API](Get%20started%20with%20EASY%20PARCEL%20OPEN%20API.md) | [Back to official documents](../README.md)
+
+#### Steps to setup demo account
 1.) Login to developer https://developer.easyparcel.com
 ![Login%20Page.png](../pictures/Login%20Page.png)
 

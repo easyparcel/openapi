@@ -3,6 +3,9 @@ Submit OnDemand Orders: This features enables users to submit the OnDemand shipm
 
 #### [Feature/Endpoints](README.md)  |  [Back to official documentation](../README.md) 
 
+#### Endpoint URL: 
+`https://api.easyparcel.com/ondemand/order`
+
 ### [Request](#Requested-Parameters)  |  [Return](#Returned-Parameters) 
 
 #### Requested Parameters:

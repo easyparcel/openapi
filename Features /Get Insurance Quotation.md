@@ -4,7 +4,7 @@ Get Insurance Quotation: This features enables users to check the insurance quot
 #### [Feature/Endpoints](README.md)  |  [Back to official documentation](../README.md) 
 
 #### Endpoint URL: 
-`https://api.easyparcel.com/open_api/shipment/insurance_quotations`
+`https://api.easyparcel.com/shipment/insurance_quotations`
 
 ### [Request](#Requested-Parameters)  |  [Return](#Returned-Parameters) 
 

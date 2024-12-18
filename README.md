@@ -8,9 +8,19 @@ The EasyParcel API allows your application to access current data within EasyPar
 
 ---
 
-### Follow the guide below to integrate with easy parcel api.
+## Table of Contents 
+- [Guides](#Guides)
+- [Oauth](#Oauth-Authentication)
+- [Features](#API-Functions/Features)
+- [Order Flow](#Order-function-Flow)
+- [References](#References)
 
-### [Steps to get started with EASYPARCEL](Guides/Get%20started%20with%20EASY%20PARCEL%20OPEN%20API.md)
+---
+
+### Guides
+#### Follow the guide below to integrate with easy parcel api.
+
+#### [Steps to get started with EASYPARCEL](Guides/Get%20started%20with%20EASY%20PARCEL%20OPEN%20API.md)
 
 ---
 ### Oauth Authentication
@@ -20,21 +30,24 @@ EasyParcel's API employs the OAuth 2.0 authorization framework to provide secure
 ### [More about Oauth Authentication](Oauth%20Authentication.md)
 ### [Steps to get Oauth Access token](Guides/Steps%20to%20get%20Oauth%20Access%20token.md)
 ---
-#### API Functions/Features:
 
-**[Get Shipment Quotation](Features%20/Get%20Shipment%20Quotation.md)**
+### API Functions/Features:
 
-**[Get Insurance Quotation](Features%20/Get%20Insurance%20Quotation.md)**
+#### [Functions/Features](Features%20/README.md)
 
-**[Get Courier Dropoff point](Features%20/Get%20Courier%20Dropoff%20point.md)**
+[Get Shipment Quotation](Features%20/Get%20Shipment%20Quotation.md)
 
-**[Submit Shipment Orders](Features%20/Submit%20Shipment%20Orders.md)**
+[Get Insurance Quotation](Features%20/Get%20Insurance%20Quotation.md)
 
-**[Get OnDemand Quotation](Features%20/Get%20OnDemand%20Quotation)**
+[Get Courier Dropoff point](Features%20/Get%20Courier%20Dropoff%20point.md)
 
-**[Submit OnDemand Order](Features%20/Submit%20OnDemand%20Order)**
+[Submit Shipment Orders](Features%20/Submit%20Shipment%20Orders.md)
 
-**[Get Wallet](Features%20/Get%20Wallet.md)**
+[Get OnDemand Quotation](Features%20/Get%20OnDemand%20Quotation)
+
+[Submit OnDemand Order](Features%20/Submit%20OnDemand%20Order)
+
+[Get Wallet](Features%20/Get%20Wallet.md)
 
 ---
 

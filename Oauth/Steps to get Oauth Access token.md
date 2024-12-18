@@ -100,7 +100,7 @@ Request:
 | refresh_token            | string    | The new Refresh token for the next refresh (Depends if requested on ep_auth/token) |
 | refresh_token_expires_in | int       | The refresh token life span in seconds                                             |
 | refresh_token_expires_at | date time | The refresh token expiry date                                                      |
-| App                      | array     | Refer to [L2 (App)](#App)                                                          |
+| App                      | array     | Refer to [App](#App)                                                          |
 
 
 #### App

@@ -28,4 +28,4 @@
 3.)Top up successful
 ![TopUpSuccess.png](../pictures/TopUpSuccess.png)
 
-4.) Continue with [EASY PARCEL API SETUP](Get%20started%20with%20EASY%PARCEL%20OPEN%20API.md)
+4.) Continue with [EASY PARCEL API SETUP](Guides/Get%20started%20with%20EASY%20PARCEL%20OPEN%20API.md)

@@ -4,7 +4,7 @@ Get OnDemand Quotation: This feature enables users to obtain OnDemand Shipment q
 #### [Feature/Endpoints](README.md)  |  [Back to official documentation](../README.md) 
 
 #### Endpoint URL: 
-`https://api.easyparcel.com/open_api/ondemand/quotation`
+`https://api.easyparcel.com/ondemand/quotation`
 
 ### [Request](#Requested-Parameters)  |  [Return](#Returned-Parameters) 
 

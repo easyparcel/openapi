@@ -16,9 +16,9 @@ Below are all the Functions and Endpoints available for the API
 
 ### OnDemand
 
-**[Get OnDemand Quotation](Get%20OnDemand%20Quotation.md)**
+**[Get OnDemand Quotation](OnDemand/Get%20OnDemand%20Quotation.md)**
 
-**[Submit OnDemand Order](Submit%20OnDemand%20Order.md)**
+**[Submit OnDemand Order](OnDemand/Submit%20OnDemand%20Order.md)**
 
 ### Wallet
 

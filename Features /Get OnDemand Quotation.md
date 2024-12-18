@@ -1,6 +1,8 @@
 ### Get OnDemand Quotation
 Get OnDemand Quotation: This feature enables users to obtain OnDemand Shipment quotations from all courier companies available on the EasyParcel platform. Users need to provide sender and receiver addresses to check the shipment quotation.
 
+#### [Feature/Endpoints](README.md)  |  [Back to official documentation](../README.md) 
+
 ### [Request](#Requested-Parameters)  |  [Return](#Returned-Parameters) 
 
 #### Requested Parameters:

@@ -1,6 +1,6 @@
 ## Get started with EASY PARCEL OPEN API
 
-### [Back to official documentation](../README.md)
+#### [Back to official documentation](../README.md)
 
 ### [Setup up demo account](Setup%20demo%20account.md)
 

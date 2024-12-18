@@ -1,7 +1,7 @@
 ### Submit Shipment Orders
 Submit Shipment Orders: This features enables users to submit the shipment orders. Users are required to fill in the necessary fields to access the insurance rate information.
 
-#### [Feature/Endpoints](README.md)  |  [Back to official documentation](../README.md) 
+#### [Feature/Endpoints](../README.md)  |  [Back to official documentation](../../README.md) 
 
 #### Endpoint URL: 
 `https://api.easyparcel.com/shipment/submit_orders`

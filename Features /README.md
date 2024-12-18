@@ -12,8 +12,8 @@ Below are all the Functions and Endpoints available for the API
 
 **[Submit Shipment Orders](Submit%20Shipment%20Orders.md)**
 
-**[Get OnDemand Quotation](Get%20OnDemand%20Quotation)**
+**[Get OnDemand Quotation](Get%20OnDemand%20Quotation.md)**
 
-**[Submit OnDemand Order](Submit%20OnDemand%20Order)**
+**[Submit OnDemand Order](Submit%20OnDemand%20Order.md)**
 
 **[Get Wallet](Features%20/Get%20Wallet.md)**

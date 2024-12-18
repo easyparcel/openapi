@@ -271,59 +271,57 @@ Request Sample Code:
 | shipment_tracking_sms      | array      | Shipment notification details on sms                                                                           |
 | shipment_tracking_email    | array      | Shipment notification details on email                                                                         |
 
-###### shipments
-
-| Returned Parameters                          | Type       | Description                                                         |
-| -------------------------------------------- | ---------- | ------------------------------------------------------------------- |
-| uuid                                         | string(25) | Uuid of the shipment                                                |
-| courier_service                              | string     | The courier service and type selected for the shipment              |
-| courier                                      | string     | Name of the courier service                                         |
-| currency_code                                | string     | Currency use for the shipment                                       |
-| total_amount                                 | double     | The shipment amount / price of this particular shipments            |
-| credit_applied                               | double     | Credit applied for this particular shipment                         |
-| free_credit_applied                          | double     | Free credit applied for this particular shipment                    |
-| shipment_price                               | double     | Price of this particular shipment                                   |
-| tax_amount                                   | double     | Tax amount of this particular shipment                              |
-| collection_date                              | date       | Collection date of the parcel                                       |
-| tracking_status                              | int        | The tracking status of the parcel ()                                |
-| awb_url                                      | string     | The url to access the airway bill                                   |
-| awb_number                                   | string     | The airway bill number                                              |
-| tracking_url                                 | string     | The url to tracking the parcel                                      |
-| shipment_number                              | string     | The unique number of the shipment                                   |
-| sender_point_code                            | string     |                                                                     |
-| sender_name                                  | string     | Name of the sender                                                  |
-| sender_phone_number_country_code             | string     | The country code of the phone of the sender                         |
-| sender_phone_number                          | string     | Phone number of the sender                                          |
-| sender_alternate_phone_number                | string     | Alternate phone number of the sender                                |
-| sender_alternate_phone_number_country_code   | string     | Alternate the country code of the phone of the sender               |
-| sender_email                                 | string     | Sender's Email                                                      |
-| sender_company_name                          | string     | Sender's Company Name                                               |
-| sender_address1                              | string     | Sender's Address 1                                                  |
-| sender_address2                              | string     | Sender's Address 2                                                  |
-| sender_city                                  | string     | Sender's city                                                       |
-| sender_province_code                         | string     | Sender's province (refer to [ISO 3166](../References/ISO%203166.md)))                   |
-| sender_postcode                              | string     | Sender's post code                                                  |
-| sender_country_code                          | string     | Sender's country code (refer to [Country Code](../References/Country%20Code.md)))      |
-| receiver_point_code                          | string     |                                                                     |
-| receiver_name                                | string     | Name of the receiver                                                |
-| receiver_phone_number_country_code           | string     | The country code of the phone of the receiver                       |
-| receiver_phone_number                        | string     | Phone number of the receiver                                        |
-| receiver_alternate_phone_number              | string     | Alternate phone number of the receiver                              |
-| receiver_alternate_phone_number_country_code | string     | Alternate the country code of the phone of the receiver             |
-| receiver_email                               | string     | Receiver's Email                                                    |
-| receiver_company_name                        | string     | Receiver's Company Name                                             |
-| receiver_address1                            | string     | Receiver's Address 1                                                |
-| receiver_address2                            | string     | Receiver's Address 2                                                |
-| receiver_city                                | string     | Receiver's city                                                     |
-| receiver_province_code                       | string     | Sender's province (refer to [ISO_3166](#iso3166))                   |
-| receiver_postcode                            | string     | Sender's post code                                                  |
-| receiver_country_code                        | string     | Sender's country code (refer to [country code](#country-code))      |
-| cod                                          | string     | Cash on delivery status                                             |
-| weight                                       | double     | Weight of the  shipment                                             |
-| height                                       | double     | Height of the shipment parcels                                      |
-| lenght                                       | double     | Lenght of the particular shipment                                   |
-| width                                        | double     | Width of the particular shipment                                    |
-| shipment_items                               | array      | Shipments items details (refer to [shipment items](#shipment-items) |
+| Returned Parameters                          | Type       | Description                                                                       |
+| -------------------------------------------- | ---------- | --------------------------------------------------------------------------------- |
+| uuid                                         | string(25) | Uuid of the shipment                                                              |
+| courier_service                              | string     | The courier service and type selected for the shipment                            |
+| courier                                      | string     | Name of the courier service                                                       |
+| currency_code                                | string     | Currency use for the shipment                                                     |
+| total_amount                                 | double     | The shipment amount / price of this particular shipments                          |
+| credit_applied                               | double     | Credit applied for this particular shipment                                       |
+| free_credit_applied                          | double     | Free credit applied for this particular shipment                                  |
+| shipment_price                               | double     | Price of this particular shipment                                                 |
+| tax_amount                                   | double     | Tax amount of this particular shipment                                            |
+| collection_date                              | date       | Collection date of the parcel                                                     |
+| tracking_status                              | int        | The tracking status of the parcel ()                                              |
+| awb_url                                      | string     | The url to access the airway bill                                                 |
+| awb_number                                   | string     | The airway bill number                                                            |
+| tracking_url                                 | string     | The url to tracking the parcel                                                    |
+| shipment_number                              | string     | The unique number of the shipment                                                 |
+| sender_point_code                            | string     | A unique identifier for the sender's location                                     |
+| sender_name                                  | string     | Name of the sender                                                                |
+| sender_phone_number_country_code             | string     | The country code of the phone of the sender                                       |
+| sender_phone_number                          | string     | Phone number of the sender                                                        |
+| sender_alternate_phone_number                | string     | Alternate phone number of the sender                                              |
+| sender_alternate_phone_number_country_code   | string     | Alternate the country code of the phone of the sender                             |
+| sender_email                                 | string     | Sender's Email                                                                    |
+| sender_company_name                          | string     | Sender's Company Name                                                             |
+| sender_address1                              | string     | Sender's Address 1                                                                |
+| sender_address2                              | string     | Sender's Address 2                                                                |
+| sender_city                                  | string     | Sender's city                                                                     |
+| sender_province_code                         | string     | Sender's province (refer to [ISO 3166](../References/ISO%203166.md))             |
+| sender_postcode                              | string     | Sender's post code                                                                |
+| sender_country_code                          | string     | Sender's country code (refer to [Country Code](../References/Country%20Code.md)) |
+| receiver_point_code                          | string     | A unique identifier for the sender's location                                     |
+| receiver_name                                | string     | Name of the receiver                                                              |
+| receiver_phone_number_country_code           | string     | The country code of the phone of the receiver                                     |
+| receiver_phone_number                        | string     | Phone number of the receiver                                                      |
+| receiver_alternate_phone_number              | string     | Alternate phone number of the receiver                                            |
+| receiver_alternate_phone_number_country_code | string     | Alternate the country code of the phone of the receiver                           |
+| receiver_email                               | string     | Receiver's Email                                                                  |
+| receiver_company_name                        | string     | Receiver's Company Name                                                           |
+| receiver_address1                            | string     | Receiver's Address 1                                                              |
+| receiver_address2                            | string     | Receiver's Address 2                                                              |
+| receiver_city                                | string     | Receiver's city                                                                   |
+| receiver_province_code                       | string     | Sender's province (refer to [ISO_3166](#iso3166))                                 |
+| receiver_postcode                            | string     | Sender's post code                                                                |
+| receiver_country_code                        | string     | Sender's country code (refer to [country code](#country-code))                    |
+| cod                                          | string     | Cash on delivery status                                                           |
+| weight                                       | double     | Weight of the  shipment                                                           |
+| height                                       | double     | Height of the shipment parcels                                                    |
+| lenght                                       | double     | Lenght of the particular shipment                                                 |
+| width                                        | double     | Width of the particular shipment                                                  |
+| shipment_items                               | array      | Shipments items details (refer to [shipment items]                                |(#shipment-items) |
 
 
 ###### shipment_tracking_whatsapp

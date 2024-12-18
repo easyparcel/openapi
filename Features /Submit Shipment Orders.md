@@ -73,7 +73,6 @@ Submit Shipment Orders: This features enables users to submit the shipment order
 | quantity             | int         | Yes      | The parcel quantity                                                              |
 | Insurance_purchase   | array       | Yes      | Purchased Insurance details (refer to [insurance purchase](#Insurance-purchase)) |
 
-Request L3
 
 ###### Notification
 

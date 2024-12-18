@@ -10,7 +10,7 @@ The EasyParcel API allows your application to access current data within EasyPar
 
 ### Follow the guide below to integrate with easy parcel api.
 
-### [Steps to get started with EASYPARCEL](Get%20started%20with%20EASY%20PARCEL%20OPEN%20API.md)
+### [Steps to get started with EASYPARCEL](Guides/Get%20started%20with%20EASY%20PARCEL%20OPEN%20API.md)
 
 ---
 ### Oauth Authentication

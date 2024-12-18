@@ -11,7 +11,7 @@ The EasyParcel API allows your application to access current data within EasyPar
 ## Table of Contents 
 - [Guides](#Guides)
 - [Oauth](#Oauth-Authentication)
-- [Features](#API-Functions/Features)
+- [Features](#API-Functions/Features:)
 - [Order Flow](#Order-function-Flow)
 - [References](#References)
 

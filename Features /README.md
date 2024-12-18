@@ -4,6 +4,8 @@
 
 Below are all the Functions and Endpoints available for the API
 
+<img src="pictures/Features%20Chart.png" alt="Features Chart" style="width:40%; margin:0; padding:0;">
+
 ### Standard
 
 **[Get Shipment Quotation](Standard/Get%20Shipment%20Quotation.md)**

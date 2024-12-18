@@ -1,6 +1,8 @@
 ### Get Wallet
 Get Wallet: This features enables users to check their account wallet details/status.
 
+#### [Feature/Endpoints](README.md)  |  [Back to official documentation](../README.md) 
+
 ### [Request](#Requested-Parameters)  |  [Return](#Returned-Parameters) 
 
 #### Requested Parameters

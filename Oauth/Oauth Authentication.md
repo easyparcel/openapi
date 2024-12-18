@@ -1,5 +1,7 @@
 ## Oauth Authentication
 
+#### [Back to official documents](../README.md)
+
 EasyParcel's API uses the OAuth 2.0 authorization framework to ensure secure access to its services. OAuth 2.0 allows applications to authenticate and access the API on behalf of a user without directly exposing user credentials. 
 
 - **OAuth Version**: OAuth 2.0

@@ -1,4 +1,4 @@
-## Steps to get OAuth Authorization Access token
+## Get OAuth Authorization Access token
 
 #### [Back to official documents](../README.md)
 

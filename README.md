@@ -35,7 +35,7 @@ EasyParcel's API employs the OAuth 2.0 authorization framework to provide secure
 
 #### [Functions/Features](Features%20/README.md)
 
-### Standard
+##### Standard
 
 [Get Shipment Quotation](Features%20/Standard/Get%20Courier%20Dropoff%20point.md)
 
@@ -45,7 +45,7 @@ EasyParcel's API employs the OAuth 2.0 authorization framework to provide secure
 
 [Submit Shipment Orders](Features%20/Standard/Submit%20Shipment%20Orders.md)
 
-### OnDemand
+#### OnDemand
 
 [Get OnDemand Quotation](Features%20/OnDemand/Get%20OnDemand%20Quotation.md)
 

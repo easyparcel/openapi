@@ -4,7 +4,7 @@
 
 Below are all the Functions and Endpoints available for the API
 
-### Regular
+### Standard
 
 **[Get Shipment Quotation](Standard/Get%20Shipment%20Quotation.md)**
 

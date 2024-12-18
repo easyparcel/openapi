@@ -1,6 +1,6 @@
 ### Steps to get OAuth Authorization Access token
 
-#### [More details on Oauth](Oauth%20Authentication.md) | [Steps to get started with EASY PARCEL API](../Get%20started%20with%20EASY%20PARCEL%20OPEN%20API.md)
+#### [More details on Oauth](Oauth%20Authentication.md) | [Steps to get started with EASY PARCEL API](../Guides/Get%20started%20with%20EASY%20PARCEL%20OPEN%20API.md)
 1.) Pass the below params to the urls
 `https://developer.easyparcel.com/ep_auth/login`
 

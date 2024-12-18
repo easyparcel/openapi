@@ -1,6 +1,8 @@
 ### Get Insurance Quotation:
 Get Insurance Quotation: This features enables users to check the insurance quotations from specific courier companies on the EasyParcel platform. Users are required to fill in the necessary fields to access the insurance rate information.
 
+#### [Feature/Endpoints](README.md)  |  [Back to official documentation](../README.md) 
+
 ### [Request](#Requested-Parameters)  |  [Return](#Returned-Parameters) 
 
 #### Requested Parameters

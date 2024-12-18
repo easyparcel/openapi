@@ -5,7 +5,7 @@ Get Wallet: This features enables users to check their account wallet details/st
 
 ### [Request](#Requested-Parameters)  |  [Return](#Returned-Parameters) 
 
-#### Requested Parameters
+#### Requested Parameters / Endpoint URL
 Request Sample Code:
 ```
 https://api.easyparcel.com/wallet

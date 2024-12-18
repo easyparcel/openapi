@@ -13,11 +13,11 @@ Get Shipment Quotation: This feature enables users to obtain shipment quotations
 | Requested Parameters | Type        | Required | Description                                                 |
 | -------------------- | ----------- | -------- | ----------------------------------------------------------- |
 | from_postcode        | string(10)  | Yes      | Sender's postcode                                           |
-| from_state           | string(35)  | Yes      | Sender's state (refer to [ISO_3166](../References/ISO%203166.md))              |
-| from_country         | string(2)   | Yes      | Sender's country (refer to [country code](../References/Country%20Code.md))   |
+| from_state           | string(35)  | Yes      | Sender's state (refer to [ISO_3166](../../References/ISO%203166.md))              |
+| from_country         | string(2)   | Yes      | Sender's country (refer to [country code](../../References/Country%20Code.md))   |
 | to_postcode          | string(10)  | Yes      | Receiver's postcode                                         |
-| to_state             | string(35)  | Yes      | Receiver's state (refer to [ISO_3166](../References/ISO%203166.md))            |
-| to_country           | string(2)   | Yes      | Receiver's country (refer to [country code](../References/Country%20Code.md)) |
+| to_state             | string(35)  | Yes      | Receiver's state (refer to [ISO_3166](../../References/ISO%203166.md))            |
+| to_country           | string(2)   | Yes      | Receiver's country (refer to [country code](../../References/Country%20Code.md)) |
 | weight               | double(8,2) | Yes      | The weight of the parcel.(in KG)                            |
 | width                | double(8,2) | Optional | The width of the parcel. (in CM)                            |
 | height               | double(8,2) | Optional | The height of the parcel.(in CM)                            |
@@ -52,10 +52,10 @@ Request Sample Code:
 | Returned Parameters | Type       | Description                                                         |
 | ------------------- | ---------- | ------------------------------------------------------------------- |
 | from_postcode       | string(10) | Sender's postcode                                                   |
-| from_state          | string     | Sender's state (refer to [ISO 3166](../References/ISO%203166.md))   |
+| from_state          | string     | Sender's state (refer to [ISO 3166](../../References/ISO%203166.md))   |
 | from_country        | string     | Sender's country                                                    |
 | to_postcode         | string     | Receiver's postcode                                                 |
-| to_state            | string     | Receiver's state (refer to [ISO 3166](../References/ISO%203166.md)) |
+| to_state            | string     | Receiver's state (refer to [ISO 3166](../../References/ISO%203166.md)) |
 | to_country          | string     | Receiver's country                                                  |
 | weight              | double     | parcel's weight                                                     |
 | unit                | int        | unit of items                                                       |

@@ -111,4 +111,5 @@ Request:
 | callbackUris         | string | Destination that sends the user back after they have authenticated and granted access |
 | redirectUris         | string | Redirect destination for the user after the authorization process                     |
 
-5.) Use the access token to call the api
+5.) Use the access token to call the api [Features](../Features/README.md)
+

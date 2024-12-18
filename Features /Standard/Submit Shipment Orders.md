@@ -313,9 +313,9 @@ Request Sample Code:
 | receiver_address1                            | string     | Receiver's Address 1                                                              |
 | receiver_address2                            | string     | Receiver's Address 2                                                              |
 | receiver_city                                | string     | Receiver's city                                                                   |
-| receiver_province_code                       | string     | Sender's province (refer to [ISO_3166](#iso3166))                                 |
+| receiver_province_code                       | string     | Sender's province (refer to [ISO 3166](../../References/ISO%203166.md))                                 |
 | receiver_postcode                            | string     | Sender's post code                                                                |
-| receiver_country_code                        | string     | Sender's country code (refer to [country code](#country-code))                    |
+| receiver_country_code                        | string     | Sender's country code (refer to [Country Code](../../References/Country%20Code.md))                  |
 | cod                                          | string     | Cash on delivery status                                                           |
 | weight                                       | double     | Weight of the  shipment                                                           |
 | height                                       | double     | Height of the shipment parcels                                                    |

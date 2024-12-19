@@ -38,13 +38,13 @@ EasyParcel's API employs the OAuth 2.0 authorization framework to provide secure
 
 ##### Standard
 
-[Get Shipment Quotation](Features%20/Standard/Get%20Courier%20Dropoff%20point.md)
+[Get Shipment Quotation](Features%20/Shipping/Get%20Courier%20Dropoff%20point.md)
 
-[Get Insurance Quotation](Features%20/Standard/Get%20Insurance%20Quotation.md)
+[Get Insurance Quotation](Features%20/Shipping/Get%20Insurance%20Quotation.md)
 
-[Get Courier Dropoff point](Features%20/Standard/Get%20Shipment%20Quotation.md)
+[Get Courier Dropoff point](Features%20/Shipping/Get%20Shipment%20Quotation.md)
 
-[Submit Shipment Orders](Features%20/Standard/Submit%20Shipment%20Orders.md)
+[Submit Shipment Orders](Features%20/Shipping/Submit%20Shipment%20Orders.md)
 
 ##### OnDemand
 

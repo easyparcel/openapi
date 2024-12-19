@@ -1,6 +1,6 @@
 ### References
 
-#### [Back to official documents](../README.md) | [Country Code](Country%20Code.md) | [ISO 3166](ISO%203166.md)
+#### [Back to official documents](../README.md) | [Country Code](Country%20Code.md) | [ISO 3166](ISO_3166.md)
 
 ### API Return Status
 

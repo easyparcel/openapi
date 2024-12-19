@@ -8,13 +8,13 @@ Below are all the Functions and Endpoints available for the API
 
 ### [Standard](Standard)
 
-[Get Shipment Quotation](Standard/Get%20Shipment%20Quotation.md)
+[Get Shipment Quotation](Shipping/Get%20Shipment%20Quotation.md)
 
-[Get Insurance Quotation](Standard/Get%20Insurance%20Quotation.md)
+[Get Insurance Quotation](Shipping/Get%20Insurance%20Quotation.md)
 
-[Get Courier Dropoff point](Standard/Get%20Courier%20Dropoff%20point.md)
+[Get Courier Dropoff point](Shipping/Get%20Courier%20Dropoff%20point.md)
 
-[Submit Shipment Orders](Standard/Submit%20Shipment%20Orders.md)
+[Submit Shipment Orders](Shipping/Submit%20Shipment%20Orders.md)
 
 ### [OnDemand](OnDemand)
 

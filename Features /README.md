@@ -8,6 +8,8 @@ Below are all the Functions and Endpoints available for the API
 
 ### Standard
 
+#### [Standard](Standard)
+
 **[Get Shipment Quotation](Standard/Get%20Shipment%20Quotation.md)**
 
 **[Get Insurance Quotation](Standard/Get%20Insurance%20Quotation.md)**

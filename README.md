@@ -1,5 +1,5 @@
 
-<img src="pictures/EasyParcel-TransparentSquare-md.png" alt="Logo" style="width:250px;">
+<img src="Pictures/EasyParcel-TransparentSquare-md.png" alt="Logo" style="width:250px;">
 
 # Easy Parcel API  
 
@@ -60,7 +60,7 @@ EasyParcel's API employs the OAuth 2.0 authorization framework to provide secure
 ---
 
 ### Order function Flow
-<img src="pictures/Flow%20Chart.png" alt="Flow Chart" style="width:40%; margin:0; padding:0;">
+<img src="Pictures/flow_chart.png" alt="Flow Chart" style="width:40%; margin:0; padding:0;">
 
 ---
 

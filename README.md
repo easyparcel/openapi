@@ -20,17 +20,17 @@ The EasyParcel API allows your application to access current data within EasyPar
 ### Guides
 #### Follow the guide below to integrate with easy parcel api.
 
-#### [Steps to get started with EASYPARCEL](Guides/1.Get%20started%20with%20EASY%20PARCEL%20OPEN%20API.md)
-#### [Setup Demo Account](Guides/2.Setup%20demo%20account.md)
-#### [Get Oauth Access token](Guides/3.Get%20Oauth%20Access%20token.md)
+#### [Steps to get started with EASYPARCEL](Guides/1.get_started_with_EASY_PARCEL_OPEN_API.md)
+#### [Setup Demo Account](Guides/2.setup_demo_account.md)
+#### [Get Oauth Access token](Guides/3.get_Oauth_Access_token.md)
 
 ---
 ### Oauth Authentication
 
 EasyParcel's API employs the OAuth 2.0 authorization framework to provide secure and controlled access to its services.
 
-#### [More about Oauth Authentication](Oauth%20Authentication.md)
-#### [Steps to get Oauth Access token](Guides/Steps%20to%20get%20Oauth%20Access%20token.md)
+#### [More about Oauth Authentication](oauth_Authentication.md)
+#### [Steps to get Oauth Access token](Guides/steps_to_get_Oauth_Access_token.md)
 ---
 
 ### API Functions Features
@@ -39,23 +39,23 @@ EasyParcel's API employs the OAuth 2.0 authorization framework to provide secure
 
 ##### Standard
 
-[Get Shipment Quotation](Features/Shipping/1.Get%20Courier%20Dropoff%20point.md)
+[Get Shipment Quotation](Features/Shipping/1.get_courier_dropoff_point.md)
 
-[Get Insurance Quotation](Features/Shipping/2.Get%20Insurance%20Quotation.md)
+[Get Insurance Quotation](Features/Shipping/2.get_insurance_quotation.md)
 
-[Get Courier Dropoff point](Features/Shipping/3.Get%20Shipment%20Quotation.md)
+[Get Courier Dropoff point](Features/Shipping/3.get_shipment_quotation.md)
 
-[Submit Shipment Orders](Features/Shipping/4.Submit%20Shipment%20Orders.md)
+[Submit Shipment Orders](Features/Shipping/4.submit_shipment_orders.md)
 
 ##### OnDemand
 
-[Get OnDemand Quotation](Features/OnDemand/1.Get%20OnDemand%20Quotation.md)
+[Get OnDemand Quotation](Features/OnDemand/1.get_ondemand_quotation.md)
 
-[Submit OnDemand Order](Features/OnDemand/2.Submit%20OnDemand%20Order.md)
+[Submit OnDemand Order](Features/OnDemand/2.submit_ondemand_order.md)
 
 ##### Wallet
 
-[Get Wallet](Features%20/Get%20Wallet.md)
+[Get Wallet](Features%20/get_wallet.md)
 
 ---
 
@@ -66,8 +66,8 @@ EasyParcel's API employs the OAuth 2.0 authorization framework to provide secure
 
 ### References
 
-**[API Return Status](References/API%20Return%20Status.md)**
+**[API Return Status](References/API_return_status.md)**
 
-**[Conutry Code](References/Country%20Code.md)**
+**[Conutry Code](References/country_code.md)**
 
-**[ISO 3166](References/ISO%203166.md)**
+**[ISO 3166](References/ISO_3166.md)**

@@ -4,24 +4,24 @@
 
 Below are all the Functions and Endpoints available for the API
 
-<img src="../pictures/Features%20Chart.png" alt="Features Chart" style="width:40%; margin:0; padding:0;">
+<img src="../pictures/Features_Chart.png" alt="Features Chart" style="width:40%; margin:0; padding:0;">
 
 ### [Shipping](Shipping)
 
-[Get Shipment Quotation](Shipping/Get%20Shipment%20Quotation.md)
+[Get Shipment Quotation](Shipping/get_Shipment_Quotation.md)
 
-[Get Insurance Quotation](Shipping/Get%20Insurance%20Quotation.md)
+[Get Insurance Quotation](Shipping/get_Insurance_Quotation.md)
 
-[Get Courier Dropoff point](Shipping/Get%20Courier%20Dropoff%20point.md)
+[Get Courier Dropoff point](Shipping/get_Courier_Dropoff_point.md)
 
-[Submit Shipment Orders](Shipping/Submit%20Shipment%20Orders.md)
+[Submit Shipment Orders](Shipping/Submit_Shipment_Orders.md)
 
 ### [OnDemand](OnDemand)
 
-[Get OnDemand Quotation](OnDemand/Get%20OnDemand%20Quotation.md)
+[Get OnDemand Quotation](OnDemand/get_OnDemand_Quotation.md)
 
-[Submit OnDemand Order](OnDemand/Submit%20OnDemand%20Order.md)
+[Submit OnDemand Order](OnDemand/Submit_OnDemand_Order.md)
 
 ### Wallet
 
-[Get Wallet](Get%20Wallet.md)
+[Get Wallet](get_Wallet.md)

@@ -36,12 +36,16 @@ Ensure to use HTTPS to protect communication between clients and servers to prev
 ### Authorization Endpoint
 The Authorization Endpoint is used by the client to obtain authorization from the resource owner via user-agent redirection.
 #### Endpoint URL: 
-`https://developer.easyparcel.com/ep_auth/login`
+```
+https://developer.easyparcel.com/ep_auth/login
+```
 
 
 
 ### Token Endpoint
 The Token Endpoint is used by the client to obtain an access token by presenting its authorization grant.
 #### Endpoint URL: 
-`https://developer.easyparcel.com/ep_auth/token`
+```
+https://developer.easyparcel.com/ep_auth/token
+```
 

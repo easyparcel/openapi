@@ -1,5 +1,5 @@
 
-<img src="Pictures/EasyParcel-TransparentSquare-md.png" alt="Logo" style="width:250px;">
+<img src="Pictures/easyparcel-transparentsquare-md.png" alt="Logo" style="width:250px;">
 
 # Easy Parcel API  
 

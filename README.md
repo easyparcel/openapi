@@ -55,7 +55,7 @@ EasyParcel's API employs the OAuth 2.0 authorization framework to provide secure
 
 ##### Wallet
 
-[Get Wallet](Features%20/get_wallet.md)
+[Get Wallet](Features/get_wallet.md)
 
 ---
 

@@ -20,7 +20,7 @@ https://api.easyparcel.com/wallet
 
 
 Return Sample Code:
-```
+``` js
 {
     "status_code": 200,
     "message": "Success",

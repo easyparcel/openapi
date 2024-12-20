@@ -1,5 +1,7 @@
-
+<p align="center">
 <img src="Pictures/easyparcel-transparentqquare-md.png" alt="Logo" style="width:250px;">
+</p>
+
 
 # Easy Parcel API  
 

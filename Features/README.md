@@ -9,14 +9,12 @@ Below are all the Functions and Endpoints available for the API
 </p>
 
 ### [Shipping](Shipping)
-Standard Shipping:
-- Delivery Time: Standard shipping typically takes longer, with delivery times depending on the chosen courier and service level.
 
-- Scheduled Delivery: Parcels are delivered according to a predetermined schedule, which may not be as flexible as on-demand options.
+- Scheduled Delivery
 
-- Cost: Standard shipping might be more cost-effective for non-urgent deliveries.
+- Cost-effective
 
-- Tracking: While tracking is available, it may not be as real-time as the on-demand service.
+- Tracking Available
   
 [Get Shipment Quotation](Shipping/get_Shipment_Quotation.md)
 
@@ -28,8 +26,7 @@ Standard Shipping:
 
 ### [OnDemand](OnDemand)
 
-On-Demand Shipping:
-- Speed: On-Demand shipping is designed for urgent deliveries, often providing same-day delivery.
+- Speed: providing same-day delivery.
 
 - Real-Time Tracking: You can track your parcel in real-time once the booking is made.
 

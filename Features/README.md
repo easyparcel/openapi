@@ -4,7 +4,9 @@
 
 Below are all the Functions and Endpoints available for the API
 
+<p align="center">
 <img src="../Pictures/features_chart.png" alt="Features Chart" style="width:40%; margin:0; padding:0;">
+</p>
 
 ### [Shipping](Shipping)
 Standard Shipping:
